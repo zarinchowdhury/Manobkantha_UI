@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>মানবকণ্ঠ::সম্পাদকীয় - দৈনিক মানবকণ্ঠ এর মতো লেআউট</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/editorial.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&family=Noto+Sans+Bengali:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- ======================================
+TOP BAR
+======================================= -->
+
+<div class="topbar">
+
+    <div class="container">
+
+        <div class="row align-items-center justify-content-center">
+           <!-- Swapped col-lg lengths to auto scale gracefully on devices -->
+            <div class="col-12 col-lg-8 mb-2 mb-lg-0 text-center text-lg-start">
+                <!-- Forcibly disables any hidden theme-generated CSS lines -->
+                <style>
+                    .top-links li::before, .top-links li::after { content: none !important; }
+                </style>
+                
+                <ul class="top-links d-flex flex-wrap justify-content-center justify-content-lg-start list-unstyled gap-2 m-0 p-0">
+                    <span class="date-text d-none d-md-inline-block">বৃহস্পতি‌বার, ০২ জুলাই ২০২৬</span>
+                    
+                    <span class="d-none d-md-inline-block text-muted ms-1">|</span>
+                    <li><a href="#">ই-পেপার</a></li>
+                    
+                    <span class="d-none d-md-inline-block text-muted ms-1">|</span>
+                    <li class="d-none d-md-inline-block"><a href="#">রূপান্তর</a></li>
+                    
+                    <span class="d-none d-md-inline-block text-muted ms-1">|</span>
+                    <li><a href="#">আর্কাইভ</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 text-center text-lg-end">
+                <ul class="social-icons d-flex justify-content-center justify-content-lg-end list-unstyled gap-3 m-0 p-0">
+                    <li>
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label=" (Twitter)">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- ======================================
+LOGO + ADVERTISEMENT
+======================================= -->
+
+<section class="header-middle">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-4">
+
+                <a href="#">
+
+                    <img
+                        src="assets/images/logo/logo.png"
+                        class="site-logo"
+                        alt="">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================
+            NAVBAR
+======================================= -->
+<div id="showbacktop" class="showbacktop full-nav bg-gray border-lg-2 border-mainmenu shadow-b-sm py-0" style="position: -webkit-sticky; position: sticky; top: 0; z-index: 99999 !important;">
+    <nav class="custom-exact-navbar">
+        <div class="nav-inner-container">
+            
+            <!-- Hamburger Navigation Toggle Button Group -->
+            <div class="nav-left-group">
+                <button class="nav-hamburger" type="button" aria-label="Toggle navigation" onclick="document.getElementById('exactMobileDropdownMenu').classList.add('open-active'); document.getElementById('menuOverlayCloseBtn').classList.add('visible-active'); document.getElementById('navBackdropOverlay').classList.add('visible-active'); document.body.style.overflow='hidden';">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Page Dim Backdrop Overlay Component -->
+            <div id="navBackdropOverlay" class="nav-backdrop-overlay" onclick="document.getElementById('exactMobileDropdownMenu').classList.remove('open-active'); document.getElementById('menuOverlayCloseBtn').classList.remove('visible-active'); this.classList.remove('visible-active'); document.body.style.overflow='auto';"></div>
+
+            <!-- Resized Dismissal Close Button (X) Outside Container Panel Layer -->
+            <button id="menuOverlayCloseBtn" class="outside-close-canvas-btn" type="button" aria-label="Close Menu" onclick="document.getElementById('exactMobileDropdownMenu').classList.remove('open-active'); document.getElementById('navBackdropOverlay').classList.remove('visible-active'); this.classList.remove('visible-active'); document.body.style.overflow='auto';">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Mobile Off-Canvas Sidebar Menu -->
+            <nav id="exactMobileDropdownMenu" class="menu-mobile d-flex flex-column push push-start shadow-r-sm bg-white">
+                <div class="mobile-content mb-auto">
+                    
+                    <!-- Sidenav Branding Header Segment (With Top Spacing) -->
+                    <div class="logo-sidenav text-center">
+                        <a href="#">
+                            <img src="https://image.manobkantha.com.bd/uploads/logoLight1.png" style="max-height: 55px; width: auto;" class="img-fluid" alt="logo">
+                        </a>
+                        <!-- Blue Underline Line Element Block -->
+                        <div class="logo-accent-underline"></div>
+                    </div>
+
+                    <!-- Side Links Container Area -->
+                    <div class="sidenav-menu">
+                        <ul class="clean-mobile-links-list">
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>প্রচ্ছদ</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>জাতীয়</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>রাজনীতি</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>আইন-আদালত</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>আন্তর্জাতিক</a>
+                            </li>
+                            
+                            <!-- Dropdown Element Group: সারাদেশে -->
+                            <li class="has-custom-mobile-dropdown">
+                                <div class="dropdown-trigger-bar" onclick="this.parentElement.classList.toggle('dropdown-open');">
+                                    <span><span class="custom-menu-bullet"></span>সারাদেশ</span>
+                                    <span class="custom-arrow-indicator"></span>
+                                </div>
+                                <ul class="custom-sub-dropdown-panel">
+                                    <li><a href="#"><span class="custom-menu-bullet child-bullet"></span>ঢাকা</a></li>
+                                    <li><a href="#"><span class="custom-menu-bullet child-bullet"></span>বরিশাল</a></li>
+                                    <li><a href="#"><span class="custom-menu-bullet child-bullet"></span>খুলনা</a></li>
+                                    <li><a href="#"><span class="custom-menu-bullet child-bullet"></span>চট্টগ্রাম</a></li>
+                                    <li><a href="#"><span class="custom-menu-bullet child-bullet"></span>ময়মনসিংহ</a></li>
+                                    <li><a href="#"><span class="custom-menu-bullet child-bullet"></span>রংপুর</a></li>
+                                    <li><a href="#"><span class="custom-menu-bullet child-bullet"></span>রাজশাহী</a></li>
+                                    <li><a href="#"><span class="custom-menu-bullet child-bullet"></span>সিলেট</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>প্রেস কর্নার</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>খেলাধুলা</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>বিনোদন</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>ধর্ম</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>অপরাধ</a>
+                            </li>
+                            
+                            <!-- Dropdown Element Group: কলাম -->
+                            <li class="has-custom-mobile-dropdown">
+                                <div class="dropdown-trigger-bar" onclick="this.parentElement.classList.toggle('dropdown-open');">
+                                    <span><span class="custom-menu-bullet"></span>কলাম</span>
+                                    <span class="custom-arrow-indicator"></span>
+                                </div>
+                                <ul class="custom-sub-dropdown-panel">
+                                    <li><a href="editorial.html"><span class="custom-menu-bullet child-bullet"></span>সম্পাদকীয়</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>প্রবাস</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>রাজধানী</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>গণমাধ্যম</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="custom-menu-bullet"></span>ক্যাম্পাস</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+               <!-- Footer Area Label Content -->
+<div class="mobile-copyright-wrapper text-center">
+    <p class="custom-copyright-text">
+        Copyright<br>
+        <a href="#" class="copyright-brand-link">Daily Manobkantha</a> - All<br>
+        right reserved
+    </p>
+</div>
+            </nav>
+            
+            <!-- Header Brand Logo Container Box Frame -->
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="https://manobkantha.com.bd/assets/img/ma.png" alt="মা">
+                </a>
+            </div>
+
+            <!-- Desktop Horizontal Navigation Link Menu Section -->
+            <ul class="nav-menu-links">
+                <li><a href="#">জাতীয়</a></li>
+                <li><a href="#">রাজনীতি</a></li>
+                <li class="has-dropdown">
+                    <a href="#">সারাদেশ <i class="dropdown-arrow"></i></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#">ঢাকা</a></li>
+                        <li><a href="#">চট্টগ্রাম</a></li>
+                        <li><a href="#">সিলেট</a></li>
+                        <li><a href="#">বরিশাল</a></li>
+                        <li><a href="#">খুলনা</a></li>
+                        <li><a href="#">রংপুর</a></li>
+                        <li><a href="#">ময়মনসিংহ</a></li>
+                        <li><a href="#">রাজশাহী</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">আন্তর্জাতিক</a></li>
+                <li><a href="#">বিনোদন</a></li>
+                <li><a href="#">খেলাধুলা</a></li>
+                <li><a href="#">ক্যাম্পাস</a></li>
+                <li class="has-dropdown">
+                    <a href="#">কলাম <i class="dropdown-arrow"></i></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="editorial.html">সম্পাদকীয়</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ধর্ম</a></li>
+                <li class="has-dropdown">
+                    <a href="#">ক্যারিয়ার <i class="dropdown-arrow"></i></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#">চাকরি</a></li>
+                        <li><a href="#">লাইফস্টাইল</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">অর্থনীতি</a></li>
+                <li class="has-dropdown">
+                    <a href="#">আরো <i class="dropdown-arrow"></i></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#">প্রেস কর্নার</a></li>
+                        <li><a href="#">বিজ্ঞান ও প্রযুক্তি</a></li>
+                        <li><a href="#">সোশ্যাল মিডিয়া থেকে</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Right Sidebar Container Search Trigger Item -->
+            <div class="nav-right-search">
+                <a href="#" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+</div>
+<!-- ======================================
+                Main content
+======================================= -->
+<main id="content" class="editorial-page">
+  <div class="container-fluid editorial-container px-3 px-md-5">
+    
+    <!-- Category Header Section -->
+    <div class="row">
+      <div class="col-12 mt-4">
+        <div class="category-title-wrapper">
+          <h1 class="category-title">কলাম</h1>
+          <hr class="category-underline">
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Layout Grid -->
+    <div class="row mt-4">
+      
+      <!-- Left & Center Main Content Area (Column Width 9) -->
+      <div class="col-lg-9 col-md-8 pe-lg-4">
+        
+        <!-- Top Featured Big Post Row -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <article class="featured-post-card">
+              <div class="row align-items-start">
+                <div class="col-md-7 order-2 order-md-1">
+                  <div class="post-meta mb-2">৩ মে ২০২৬</div>
+                  <h2 class="featured-title">
+                    <a href="#">প্লাস্টিকের রাসায়নিক নিয়ে দ্রুত ভাবতে হবে</a>
+                  </h2>
+                  <p class="post-excerpt mt-3">
+                    বাংলাদেশে উন্নয়ন ও নগরায়ণের সঙ্গে সঙ্গে প্লাস্টিকের ব্যবহার যে হারে বাড়ছে, তা একদিকে যেমন অর্থনৈতিক প্রবৃদ্ধির সূচক, অন্যদিকে তেমনি জনস্বাস্থ্য ও পরিবেশের জন্য এক গভীর সংকটের পূর্বাভাস। এতদিন প্লাস্টিক দূষণ...
+                  </p>
+                </div>
+                <div class="col-md-5 order-1 order-md-2 mb-3 mb-md-0">
+                  <div class="featured-image-container">
+                    <!-- Replace with actual path or use image_c24a46.png structure -->
+                    <img src="assets\images\gallery\প্লাস্টিক রাসায়নিক.png" class="img-fluid" alt="প্লাস্টিক রাসায়নিক">
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Secondary Bottom 3-Column Grid -->
+        <div class="row secondary-posts-grid">
+          
+          <!-- Grid Item 1 -->
+          <article class="col-lg-4 col-md-12 mb-4 secondary-post-card">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="w-70 pe-2">
+                <div class="post-meta">১ মে ২০২৬</div>
+                <h3 class="secondary-title">
+                  <a href="#">মে দিবস: আগামীর পৃথিবী হোক শ্রমের প্রতি শ্রদ্ধাশীল</a>
+                </h3>
+              </div>
+              <div class="w-30">
+                <img src="assets\images\gallery\মে দিবস.png" class="img-fluid thumb-img" alt="মে দিবস">
+              </div>
+            </div>
+            <p class="post-excerpt">মহান মে দিবস বিশ্বের শ্রমজীবী মানুষের অধিকার আদায়ের দিন। ন্যায্য মজুরি, সামাজিক নিরাপত্তা আর মানবিক...</p>
+          </article>
+
+          <!-- Grid Item 2 -->
+          <article class="col-lg-4 col-md-12 mb-4 secondary-post-card">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="w-70 pe-2">
+                <div class="post-meta">২৯ এপ্রিল ২০২৬</div>
+                <h3 class="secondary-title">
+                  <a href="#">মূল্যস্ফীতির চাপে মানুষ: কালক্ষেপণ না করে কার্যকর পদক্ষেপ নিন</a>
+                </h3>
+              </div>
+              <div class="w-30">
+                <img src="assets\images\gallery\মূল্যস্ফীতি.png" class="img-fluid thumb-img" alt="মূল্যস্ফীতি">
+              </div>
+            </div>
+            <p class="post-excerpt">দেশের সাধারণ মানুষের আর্থিক আচরণ অনেক সময়ই সামগ্রিক অর্থনীতির গভীর সংকেত বহন করে। সাম্প্রতিক সময়ে...</p>
+          </article>
+
+          <!-- Grid Item 3 -->
+          <article class="col-lg-4 col-md-12 mb-4 secondary-post-card clean-border">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="w-70 pe-2">
+                <div class="post-meta">২৮ এপ্রিল ২০২৬</div>
+                <h3 class="secondary-title">
+                  <a href="#">সংকট উত্তরণে জ্বালানি নিরাপত্তা নিশ্চিত করুন</a>
+                </h3>
+              </div>
+              <div class="w-30">
+                <img src="assets\images\gallery\জ্বালানি সংকট.png" class="img-fluid thumb-img" alt="জ্বালানি সংকট">
+              </div>
+            </div>
+            <p class="post-excerpt">দেশের অর্থনীতি এক অস্বস্তিকর সন্ধিক্ষণে এসে দাঁড়িয়েছে। গ্যাস, বিদ্যুৎ ও জ্বালানি সংকট এখন আর বিচ্ছিন্ন...</p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Right Sidebar (Column Width 3) -->
+      <aside class="col-lg-3 col-md-4 ps-lg-3 border-start-desktop">
+        <div class="sidebar-widget">
+          
+          <div class="sidebar-header">
+            <span class="sidebar-title-badge">সর্বশেষ সংবাদ</span>
+          </div>
+
+          <div class="sidebar-list mt-3">
+            
+            <!-- Sidebar News Item 1 -->
+            <div class="sidebar-item d-flex align-items-start py-2">
+              <a href="#" class="sidebar-item-title pe-2">শনিবারের মধ্যে সব ক্লিনিককে লেবার রুম স্থাপন না করলে লাইসেন্স বাতিল: স্বাস্থ্যমন্ত্রী</a>
+              <img src="assets\images\gallery\সংবাদ.png" class="sidebar-thumb" alt="সংবাদ">
+            </div>
+
+            <!-- Sidebar News Item 2 -->
+            <div class="sidebar-item d-flex align-items-start py-2">
+              <a href="#" class="sidebar-item-title pe-2">কক্সবাজারে পাহাড়ধসে ৯ জনের প্রাণহানি</a>
+              <img src="assets\images\gallery\কক্সবাজার.png" class="sidebar-thumb" alt="সংবাদ">
+            </div>
+
+            <!-- Sidebar News Item 3 -->
+            <div class="sidebar-item d-flex align-items-start py-2">
+              <a href="#" class="sidebar-item-title pe-2">প্রধানমন্ত্রীর সঙ্গে সৌদি রাষ্ট্রদূতের সৌজন্য সাক্ষাৎ</a>
+              <img src="assets\images\gallery\প্রধানমন্ত্রী.png" class="sidebar-thumb" alt="সংবাদ">
+            </div>
+
+            <!-- Sidebar News Item 4 -->
+            <div class="sidebar-item d-flex align-items-start py-2">
+              <a href="#" class="sidebar-item-title pe-2">লোহাগড়ায় পাথরবোঝাই ট্রাক উল্টে ঘুমন্ত স্কুলছাত্রীর মৃত্যু</a>
+              <img src="assets\images\gallery\লোহাগড়া.png" class="sidebar-thumb" alt="সংবাদ">
+            </div>
+
+            <!-- Sidebar News Item 5 -->
+            <div class="sidebar-item d-flex align-items-start py-2">
+              <a href="#" class="sidebar-item-title pe-2">ভারত নামের একটি দেশ থেকে আমরা অসাধারণ সমর্থন পাই: নেতানিয়াহু</a>
+              <img src="assets\images\gallery\ভারত.png" class="sidebar-thumb" alt="সংবাদ">
+            </div>
+
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  
+  <div class="mt-2"></div>
+
+  <!-- Left & Center Main Content Area Layout -->
+  <div class="row">
+    <div class="col-lg-9 col-md-8 pe-lg-4">
+      
+      <!-- 3x2 Archive Feed Grid Structure Layout -->
+      <div class="row archive-feed-grid">
+        
+        <!-- Row 1: Extended separator completely across columns 1, 2, and 3 -->
+        <div class="col-12 pb-4 mb-4 border-bottom-archive">
+          <div class="row m-0">
+            <!-- Card Item 1 -->
+            <article class="col-md-4 px-2 mb-3 mb-md-0">
+              <div class="d-flex align-items-start small-archive-card">
+                <img src="assets\images\gallery\পণ্য সরবরাহ.png" class="archive-thumb me-2" alt="পণ্য সরবরাহ">
+                <div class="archive-card-content">
+                  <h4 class="archive-item-title">
+                    <a href="#">পণ্য সরবরাহে প্রবল ধাক্কা: দ্রুত সমন্বিত ও দূরদর্শী পদক্ষেপ নিন</a>
+                  </h4>
+                  <div class="post-meta mt-1">২৭ এপ্রিল ২০২৬</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card Item 2 -->
+            <article class="col-md-4 px-2 mb-3 mb-md-0">
+              <div class="d-flex align-items-start small-archive-card">
+                <img src="assets\images\gallery\হামের সংক্রমণ.png" class="archive-thumb me-2" alt="হামের সংক্রমণ">
+                <div class="archive-card-content">
+                  <h4 class="archive-item-title">
+                    <a href="#">হামের সংক্রমণ নিয়ন্ত্রণে প্রস্তুতি নিতে হবে</a>
+                  </h4>
+                  <div class="post-meta mt-1">২৬ এপ্রিল ২০২৬</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card Item 3 (Now safely included inside the border container) -->
+            <article class="col-md-4 px-2 mb-0">
+              <div class="d-flex align-items-start small-archive-card">
+                <img src="assets\images\gallery\বিদ্যুৎ সংকট.png" class="archive-thumb me-2" alt="বিদ্যুৎ সংকট">
+                <div class="archive-card-content">
+                  <h4 class="archive-item-title">
+                    <a href="#">বিদ্যুৎ সংকট নিরসনে উদ্যোগ নিন</a>
+                  </h4>
+                  <div class="post-meta mt-1">২৫ এপ্রিল ২০২৬</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Row 2: Card Items 4, 5, 6 -->
+         <div class="col-12 pb-4 mb-4 border-bottom-archive">
+        <div class="col-12">
+          <div class="row m-0">
+            <!-- Card Item 4 -->
+            <article class="col-md-4 px-2 mb-4">
+              <div class="d-flex align-items-start small-archive-card">
+                <img src="assets\images\gallery\জনস্বাস্থ্য ব্যবস্থা.png" class="archive-thumb me-2" alt="জনস্বাস্থ্য ব্যবস্থা">
+                <div class="archive-card-content">
+                  <h4 class="archive-item-title">
+                    <a href="#">বাংলাদেশের জনস্বাস্থ্য ব্যবস্থা: সংকট, চ্যালেঞ্জ ও উত্তরণের পথ</a>
+                  </h4>
+                  <div class="post-meta mt-1">২৫ এপ্রিল ২০২৬</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card Item 5 -->
+            <article class="col-md-4 px-2 mb-4">
+              <div class="d-flex align-items-start small-archive-card">
+                <img src="assets\images\gallery\বিদ্যুৎ বিভ্রাট.png" class="archive-thumb me-2" alt="বিদ্যুৎ বিভ্রাট">
+                <div class="archive-card-content">
+                  <h4 class="archive-item-title">
+                    <a href="#">বিদ্যুৎ বিভ্রাটে পরীক্ষার্থীদের প্রস্তুতি সচল রাখার কৌশল</a>
+                  </h4>
+                  <div class="post-meta mt-1">২৫ এপ্রিল ২০২৬</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card Item 6 -->
+            <article class="col-md-4 px-2 mb-4">
+              <div class="d-flex align-items-start small-archive-card">
+                <img src="assets\images\gallery\রোহিঙ্গা অনুপ্রবেশ.png" class="archive-thumb me-2" alt="রোহিঙ্গা অনুপ্রবেশ">
+                <div class="archive-card-content">
+                  <h4 class="archive-item-title">
+                    <a href="#">বাড়ছে রোহিঙ্গা অনুপ্রবেশ, বন্ধ করুন</a>
+                  </h4>
+                  <div class="post-meta mt-1">১ সেপ্টেম্বর ২০২৫</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+      <!-- Load More Row Unit Container -->
+      <div class="row my-3">
+        <div class="col-12 text-center">
+          <button class="btn btn-load-more px-4 py-2" id="btn_more_category">আরও</button>
+        </div>
+      </div>
+
+      <!-- Bottom Dropdown Navigation List Panel (With defined 2-line visual break class) -->
+      <div class="row layout-break-top mb-5">
+        <div class="col-12">
+          <div class="more-topics-panel shadow-sm">
+            <div class="panel-header px-3 py-3">আরও দেখুন</div>
+            <ul class="list-group list-group-flush panel-list">
+              <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <a href="#">আঞ্চলিক সংবাদ</a>
+                <span class="chevron-arrow">&#x203A;</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <a href="#">প্রযুক্তি সংবাদ</a>
+                <span class="chevron-arrow">&#x203A;</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <a href="#">City & Local Guides</a>
+                <span class="chevron-arrow">&#x203A;</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Sidebar Area -->
+    <aside class="col-lg-3 col-md-4 ps-lg-3">
+      <div class="sidebar-widget">
+        
+        <div class="sidebar-header highlights-header">
+          <span class="sidebar-title-badge bg-blue-badge">হাইলাইটস</span>
+        </div>
+
+        <div class="sidebar-list mt-3">
+          <!-- Item 1 -->
+          <div class="sidebar-item d-flex align-items-start py-3">
+            <a href="#" class="sidebar-item-title pe-2">কক্সবাজারে পাহাড়ধসে ৯ জনের প্রাণহানি</a>
+            <img src="assets\images\gallery\কক্সবাজার.png" class="sidebar-thumb" alt="হাইলাইটস">
+          </div>
+          <!-- Item 2 -->
+          <div class="sidebar-item d-flex align-items-start py-3">
+            <a href="#" class="sidebar-item-title pe-2">‘কিংবদন্তির গল্প কখনোই শেষ হয় না’</a>
+            <img src="assets\images\gallery\হাইলাইটস2.png" class="sidebar-thumb" alt="হাইলাইটস">
+          </div>
+          <!-- Item 3 -->
+          <div class="sidebar-item d-flex align-items-start py-3">
+            <a href="#" class="sidebar-item-title pe-2">হাসপাতালে ব্রাজিলের দুই সমর্থক</a>
+            <img src="assets\images\gallery\হাইলাইটস3.png" class="sidebar-thumb" alt="হাইলাইটস">
+          </div>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+</div>
+  </div>
+  </div> <!-- Close your div.row -->
+  </div> <!-- Close your div.container.my-5 -->
+   <!-- =======================================================
+       GLOBAL FOOTER (DIRECTLY INJECTED TO BYPASS JQUERY ERROR)
+       ======================================================= -->
+  <footer class="mk-root-force-wrapper">
+    <div class="mk-core-container">
+      
+      <!-- Title Area Block -->
+      <div class="mk-main-title-row">
+        <h3>মানবকণ্ঠ</h3>
+      </div>
+
+      <!-- Data Columns Matrix Grid -->
+      <div class="mk-structural-grid">
+        
+        <!-- Column 1: Publisher Details & Contact Icons -->
+        <div class="mk-column-profile">
+          <p class="profile-title">সম্পাদক: মোহাম্মদ শহিদুল ইসলাম</p>
+          <p class="profile-title" style="margin-bottom: 16px !important;">প্রকাশক: এস এম ফারুক</p>
+          
+          <p class="icon-text-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+            <span>বরুয়া, খিলক্ষেত, ঢাকা-১২২৯</span>
+          </p>
+          <p class="icon-text-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+            <span>ফোন : +88-09611678914</span>
+          </p>
+          <p class="icon-text-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/></svg>
+            <span>info@manobkantha.com.bd</span>
+          </p>
+
+          <div class="mk-social-links-row">
+    <!-- Facebook -->
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+    
+    <!-- Twitter / X -->
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+    
+    <!-- YouTube -->
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1-1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg></a>
+
+    <!-- Instagram -->
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
+
+    <!-- TikTok (Updated Solid Bold SVG Path Geometry) -->
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.53-4.07-1.39-.42-.31-.81-.67-1.14-1.07v6.62c.04 1.76-.43 3.59-1.57 4.93-1.46 1.75-3.85 2.64-6.09 2.37-2.34-.23-4.57-1.74-5.55-3.9-1.22-2.58-.59-5.92 1.52-7.85 1.54-1.43 3.73-2.03 5.79-1.63v4.08c-1.12-.26-2.36.01-3.21.79-.89.78-1.2 2.06-.82 3.16.42 1.25 1.76 2.11 3.07 1.95 1.36-.1 2.52-1.19 2.64-2.55.05-1.59.02-3.2.02-4.8V0h.49z"/></svg></a>
+
+    <!-- LinkedIn -->
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
+</div>
+        </div>
+
+        <!-- Column 2: Science & Tech -->
+        <div class="mk-column-nav-node">
+          <h4><a href="#">বিজ্ঞান ও প্রযুক্তি</a></h4>
+          <ul>
+            <li><a href="#">ক্যাম্পাস</a></li>
+            <li><a href="#">লাইফস্টাইল</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Entertainment -->
+        <div class="mk-column-nav-node">
+          <h4><a href="#">বিনোদন</a></h4>
+          <ul>
+            <li><a href="#">আন্তর্জাতিক</a></li>
+            <li><a href="#">গণমাধ্যম</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Jobs -->
+        <div class="mk-column-nav-node">
+          <h4><a href="#">চাকরি</a></h4>
+          <ul>
+            <li><a href="#">মতামত</a></li>
+            <li><a href="#">আইন-আদালত</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Religion -->
+        <div class="mk-column-nav-node">
+          <h4><a href="#">ধর্ম</a></h4>
+          <ul>
+            <li><a href="#">আজকের এই দিনে</a></li>
+            <li><a href="#">প্রবাস</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Final Copyright Strip -->
+    <div class="mk-copyright-bar">
+      <div class="mk-core-container" style="padding-bottom: 0 !important;">
+        <div class="mk-meta-links-line">
+          <a href="#">About Manobkantha</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Term Of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="mk-legal-text-string">
+          Copyright &copy; manobkantha - All rights reserved.
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <!-- ==================================================
+   STICKY BACK TO TOP BUTTON (SQUARE & HIDDEN BY DEFAULT)
+================================================== */ -->
+<a id="backToTopBtn" class="back-top btn btn-light border position-fixed backtop-is-visible backtop-fade-out" href="#" style="bottom: 20px; right: 20px; z-index: 999999; width: 40px; height: 40px; display: none; align-items: center; justify-content: center; padding: 0; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+   <svg class="bi bi-arrow-up" width="1.2rem" height="1.2rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+     <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+     <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"></path>
+   </svg>
+</a>
+
+  <!-- Scripts Loading Blocks -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/helper.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <!-- Back To Top Visibility Engine Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var backToTopBtn = document.getElementById("backToTopBtn");
+    if (!backToTopBtn) return;
+
+    window.addEventListener("scroll", function () {
+        var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Shows up after scrolling down 100px, stays hidden otherwise
+        if (scrollPosition > 100) {
+            backToTopBtn.style.display = "flex";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    });
+});
+</script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    var navbar = document.getElementById("showbacktop");
+    if (!navbar) return;
+    
+    // Track where the navbar sits relative to your Top Bar info layout
+    var stickyOffset = navbar.offsetTop;
+
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset >= stickyOffset) {
+            navbar.style.position = "fixed";
+            navbar.style.top = "0";
+            navbar.style.left = "0";
+            navbar.style.right = "0";
+            navbar.style.zIndex = "99999";
+        } else {
+            navbar.style.position = "relative";
+            navbar.style.top = "auto";
+        }
+    });
+});
+</script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll('.opinion-tab-nav .tab-btn');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-bs-target');
+                const container = this.closest('.opinion-sidebar-widget');
+                if (!container) return;
+                container.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                container.querySelectorAll('.tab-pane-custom').forEach(pane => pane.classList.remove('active'));
+                this.classList.add('active');
+                const targetedPane = container.querySelector(targetId);
+                if (targetedPane) targetedPane.classList.add('active');
+            });
+        });
+    });
+  </script>
+</body>
+</html>
+
+<!-- Post-Footer Link Section -->
+<section class="post-footer-links-section pt-4 pb-0">
+  <div class="container d-flex justify-content-center">
+    <div class="footer-links-panel shadow-sm w-100 style-pane-container">
+      
+      <!-- Panel Header Header -->
+      <div class="panel-header px-4 py-3">
+        আর ও দেখুন
+      </div>
+      
+      <!-- Panel Lists Links Layout -->
+      <ul class="list-group list-group-flush panel-list">
+        
+        <!-- Row Item 1 -->
+        <li class="list-group-item d-flex justify-content-between align-items-center px-4 py-3">
+          <a href="#" class="panel-link-item">জাতীয় সংবাদ</a>
+          <span class="chevron-arrow">&#x203A;</span>
+        </li>
+        
+        <!-- Row Item 2 -->
+        <li class="list-group-item d-flex justify-content-between align-items-center px-4 py-3">
+          <a href="#" class="panel-link-item">ব্রেকিং নিউজ ফিড</a>
+          <span class="chevron-arrow">&#x203A;</span>
+        </li>
+        
+        <!-- Row Item 3 -->
+        <li class="list-group-item d-flex justify-content-between align-items-center px-4 py-3">
+          <a href="#" class="panel-link-item">City & Local Guides</a>
+          <span class="chevron-arrow">&#x203A;</span>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</section>
+</main>

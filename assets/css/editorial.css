@@ -1,0 +1,349 @@
+/* Color Palette & Base Setup */
+body {
+    background-color: #f4eae1 !important; /* Soft sand warm background tone */
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+    color: #222222;
+}
+
+.editorial-page {
+    padding-bottom: 60px;
+}
+.editorial-container {
+    max-width: 1400px; /* Adjust if your main index width is slightly different (e.g., 1320px) */
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+}
+/* Category Header Elements */
+.category-title-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.category-title {
+    font-size: 24px;
+    font-weight: normal;
+    color: #111111;
+    margin-bottom: 4px;
+}
+
+.category-underline {
+    border: none;
+    height: 1px;
+    background-color: #999999;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100px;
+}
+
+/* Post Meta Configurations */
+.post-meta {
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 4px;
+}
+
+/* Main Top Featured Card Details */
+.featured-post-card a {
+    color: #111111;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.featured-post-card a:hover,
+.secondary-post-card a:hover,
+.sidebar-item-title:hover {
+    color: #7f6af5;
+}
+
+.featured-title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.post-excerpt {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.featured-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Secondary Multi-column Feed Grid */
+.secondary-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.secondary-title a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.thumb-img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.w-70 { width: 70%; }
+.w-30 { width: 30%; text-align: right; }
+
+/* Sidebar Latest News Widgets Area */
+.sidebar-header {
+    border-bottom: 1px solid #593fee;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+}
+
+.sidebar-title-badge {
+    background-color: #593fee;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 15px;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.sidebar-item {
+    border-bottom: 1px dashed #dcd1c4;
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-item-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #222222;
+    text-decoration: none;
+    line-height: 1.4;
+    width: 75%;
+}
+
+.sidebar-thumb {
+    width: 65px;
+    height: 45px;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+/* Archive Feed Grid Style */
+.small-archive-card {
+    background: transparent;
+}
+
+.archive-thumb {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.archive-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.archive-item-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.archive-item-title a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.archive-item-title a:hover {
+    color: #593fee;
+}
+.border-bottom-archive {
+    border-bottom: 1px dashed #dcd1c4 !important;
+    width: 100%;
+}
+/* Custom Centered Load More Button Placement */
+.btn-load-more {
+    background-color: #593fee !important;
+    color: #ffffff !important;
+    font-size: 15px;
+    font-weight: normal;
+    border: none;
+    border-radius: 4px;
+    min-width: 100px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-load-more:hover {
+    background-color: #3b52c9 !important;
+}
+
+/* Sidebar Custom Accent Variations */
+.highlights-header {
+    border-bottom: 1px solid #593fee !important;
+}
+
+.bg-blue-badge {
+    background-color: #593fee !important;
+}
+
+/* Bottom Category Multi-layer Navigation Bar */
+.layout-break-top {
+    margin-top: 2.8rem !important; 
+}
+.more-topics-panel {
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e2e5ec;
+}
+
+.panel-header {
+    background-color: #ebf0fe;
+    color: #222222;
+    font-weight: normal;
+    font-size: 16px;
+    border-bottom: 1px solid #e2e5ec;
+}
+
+.panel-list .list-group-item {
+    background-color: #ffffff;
+    border-color: #f1f3f7;
+    transition: background-color 0.2s ease;
+}
+
+.panel-list .list-group-item:hover {
+    background-color: #fafbfc;
+}
+
+.panel-list .list-group-item a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.chevron-arrow {
+    color: #b5bbc9;
+    font-size: 22px;
+    line-height: 1;
+}
+
+/* Post-Footer Section Outer Layout Area - No bottom margin or padding */
+.post-footer-links-section {
+    background-color: #f4eae1 !important; 
+    width: 100% !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 0px !important;  /* Completely flushes the inner bottom edge */
+    margin-bottom: -24px !important; /* Negative margin pulls the next section directly up */
+}
+
+.post-footer-links-section .container {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Base Panel Container Frame */
+.style-pane-container {
+    max-width: 1100px; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e5e8f0;
+}
+
+/* Header styling */
+.style-pane-container .panel-header {
+    background-color: #eff3ff; 
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid #e5e8f0;
+}
+
+.style-pane-container .panel-list {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+/* List group components and borders configuration */
+.style-pane-container .panel-list .list-group-item {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f3f7;
+    transition: background-color 0.2s ease;
+}
+
+.style-pane-container .panel-list .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.style-pane-container .panel-list .list-group-item:hover {
+    background-color: #fcfdfe;
+}
+
+/* Link Anchors with hover underline behavior */
+.panel-link-item {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Explicit text underline when placing cursor over table title links */
+.panel-link-item:hover {
+    color: #4b66f1;
+    text-decoration: underline !important;
+}
+
+/* Subtle Right Arrow Chevron Icons */
+.style-pane-container .chevron-arrow {
+    color: #a4abb9;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+/* Custom Multi-Column Borders matching the layout mockup */
+@media (min-width: 992px) {
+    .secondary-posts-grid .secondary-post-card {
+        border-right: 1px solid #dcd1c4;
+        padding-right: 20px;
+    }
+    .secondary-posts-grid .secondary-post-card.clean-border {
+        border-right: none;
+        padding-right: 0;
+    }
+    .border-start-desktop {
+        border-left: 1px solid #dcd1c4 !important;
+    }
+}
+
+/* Responsive Overrides */
+@media (max-width: 767px) {
+    .featured-title {
+        font-size: 24px;
+    }
+    .secondary-title {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .border-start-desktop {
+        border-left: none !important;
+    }
+}

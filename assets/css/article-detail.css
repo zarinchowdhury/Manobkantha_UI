@@ -1,0 +1,588 @@
+/* Container adjustments */
+.editorial-container {
+    background-color: #EFEAE2; 
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+}
+
+/* Restricting line strictly underneath the title text size */
+.category-title-inline-block {
+    display: inline-block;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 6px;
+}
+.category-main-title {
+    font-size: 1.4rem;
+    color: #111111;
+    font-weight: normal; /* Normal weight applied */
+    margin: 0;
+}
+
+/* Share Buttons Box adjustments */
+.editorial-share-bar {
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+}
+.share-counter {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    width: 52px;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sc-num {
+    font-size: 13px;
+    font-weight: normal; 
+    color: #444444;
+    line-height: 1.1;
+}
+.sc-label {
+    font-size: 9px;
+    color: #888888;
+    text-transform: uppercase;
+}
+.share-btn {
+    height: 42px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal; 
+    transition: opacity 0.2s ease;
+}
+
+/* New: Explicitly targeting and increasing icon sizing inside the buttons */
+.share-btn i {
+    font-size: 18px; /* Increased from base text size */
+}
+
+/* Kept separate line height/alignment adjustments for the text companion in FB */
+.fb-btn i {
+    margin-right: 8px; /* Slightly reduced space to balance the larger icon size */
+}
+
+.fb-btn { background-color: #4b69b1; width: 105px; }
+.x-btn { background-color: #000000; width: 88px; }
+.wa-btn { background-color: #5cc85e; width: 95px; }
+.mail-btn { background-color: #838383; width: 105px; }
+.total-share-btn { background-color: #a2d24a; width: 102px; }
+
+/* Headline setting */
+.main-news-headline {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 1.4;
+}
+.article-body-text p {
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.85;
+    color: #333333;
+    text-align: justify;
+    margin-bottom: 24px;
+    font-weight: normal;
+}
+/* Meta Data row adjustments - Removed border-bottom, specified exact 12px padding */
+.news-meta-action-bar {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.author-name {
+    font-size: 0.88rem;
+    color: #555555;
+    font-weight: normal; /* Normalized text weight */
+}
+.publish-date-time {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.action-btn {
+    height: 42px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #c6c2c2 !important;
+    transition: opacity 0.2s ease;
+}
+.action-text-btn, .font-sizer {
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: bold; 
+}
+.action-text-btn {
+    color: #3b5998;
+}
+.action-sep {
+    color: #cccccc;
+    font-size: 0.85rem;
+}
+
+/* Image settings */
+.main-image-viewport {
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.feature-news-img {
+    object-fit: cover;
+    width: 100%;
+}
+/* Sidebar Structural Resets */
+.side-column-wrapper {
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+}
+.sidebar-ad-container img,
+.video-thumb-frame img {
+    border-radius: 0px;
+}
+
+/* Video Live Layout Rules */
+.video-thumb-frame {
+    position: relative;
+    overflow: hidden;
+}
+.live-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8px 10px;
+}
+.center-play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    color: #cc2424;
+}
+.live-stream-title {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+/* Tabs Panel Design */
+.tab-headers {
+    border-bottom: 1px solid #EFEAE2;
+}
+.btn-sidebar-tab {
+    border: none;
+    font-size: 0.95rem;
+    padding: 8px 5px;
+    text-align: center;
+    font-weight: normal;
+}
+.btn-sidebar-tab.tab-active {
+    background: linear-gradient(to right, #7a2626, #a67c7c);
+    color: #ffffff;
+}
+.btn-sidebar-tab.tab-inactive {
+    background-color: #EFEAE2;
+    color: #4949bd;
+}
+
+/* Nested List Content Box */
+.category-block-list {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-left: 1px solid #cbd5e1;
+    border-right: 1px solid #cbd5e1;
+    border-bottom: 1px solid #cbd5e1;
+}
+.category-list-heading-bar {
+    background-color: #edf0fa;
+    color: #333333;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #cbd5e1;
+}
+.category-list-group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.category-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 12px;
+    border-bottom: 1px solid #eef2f6;
+    font-size: 0.92rem;
+    color: #333333;
+}
+.category-list-item:last-child {
+    border-bottom: none;
+}
+.category-list-item i {
+    font-size: 0.75rem;
+    color: #a0aec0;
+}
+
+/* Numbered List News Styling */
+.numbered-news-container {
+    background-color: #fcf8f2;
+    border: 1px solid #ebdccb;
+}
+.num-news-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    border-bottom: 1px solid #ebdccb;
+}
+.num-news-row:last-child {
+    border-bottom: none;
+}
+.num-icon {
+    font-size: 1.3rem;
+    color: #9fa8b6;
+    margin-right: 12px;
+    line-height: 1;
+    font-weight: bold;
+}
+.num-news-text {
+    font-size: 0.92rem;
+    color: #2c2c2c;
+    line-height: 1.4;
+}
+
+/* Gradient footer button styling */
+.sidebar-footer-gradient-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, #7a2626, #a67c7c);
+    color: #ffffff !important;
+    padding: 8px 0;
+    font-size: 0.95rem;
+    border: none;
+}
+
+
+/* Inline 'আরও দেখুন' Component Design Details */
+.inline-read-more-box {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.read-more-header {
+    background-color: #edf2f9; /* Authentic soft blue-lavender shade tint from the image */
+    color: #1a1a1a;
+    padding: 12px 16px;
+    font-size: 1.05rem;
+    font-weight: normal;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.read-more-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.read-more-item {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.read-more-item:last-child {
+    border-bottom: none;
+}
+
+.read-more-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    color: #2d3748 !important;
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.read-more-link:hover {
+    background-color: #f8fafc;
+}
+
+.read-more-link i {
+    font-size: 0.85rem;
+    color: #a0aec0 !important;
+}
+
+/* Container Wrapper Properties */
+.article-footer-wrapper {
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+    background-color: transparent;
+}
+
+/* Share Buttons Color Grid */
+.btn-b-share {
+    border-radius: 4px;
+    padding: 6px 14px;
+    color: #ffffff !important;
+    font-size: 0.9rem;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+}
+.b-fb { background-color: #3b5998; }
+.b-tw { background-color: #55acee; }
+.b-ln { background-color: #3b71c1; }
+.b-pn { background-color: #cb2027; }
+.b-ml { background-color: #e67e22; }
+
+/* Read more tags label specs */
+.more-read-trigger {
+    color: #111111;
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.section-divider-line {
+    border-top: 1px solid #dcd7cf;
+    opacity: 1;
+    margin: 0;
+}
+
+/* Comments Line & Badge block layout rules */
+.comments-section-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.comments-badge {
+    background-color: #4c4cd4;
+    color: #ffffff;
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+    font-size: 0.95rem;
+    padding: 6px 18px;
+    width: fit-content;
+    border-radius: 2px 2px 0 0;
+}
+.comments-blue-line {
+    width: 100%;
+    height: 2px;
+    background-color: #4c4cd4;
+}
+
+/* Bottom Grid related heading */
+.related-headline {
+    color: #111111;
+    font-size: 1.35rem;
+    font-weight: normal;
+    margin-top: 35px;
+}
+
+/* 4-Column Card Components layout */
+.related-news-card {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-img-frame {
+    width: 100%;
+    overflow: hidden;
+}
+.card-img-frame img {
+    object-fit: cover;
+    aspect-ratio: 16 / 10;
+    width: 100%;
+}
+.card-title-text {
+    font-size: 1.05rem;
+    font-weight: normal;
+    color: #1a1a1a;
+    line-height: 1.45;
+    margin-bottom: 6px;
+    text-align: left;
+}
+.card-title-text:hover {
+    color: #4c4cd4;
+    cursor: pointer;
+}
+.card-time-stamp {
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+/* Bottom Read More Module Structure */
+.bottom-read-more-container {
+    width: 100%;
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+}
+
+.bottom-read-more-box {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.b-read-more-header {
+    background-color: #edf2f9; /* Soft tint matching the lavender/blue hue from image_fc6f9c.png */
+    color: #1a1a1a;
+    padding: 14px 20px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.b-read-more-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.b-read-more-item {
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.b-read-more-item:last-child {
+    border-bottom: none;
+}
+
+.b-read-more-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    color: #2d3748 !important;
+    text-decoration: none;
+    font-size: 1.15rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.b-read-more-link:hover {
+    background-color: #f8fafc;
+    text-decoration: none;
+}
+
+.b-read-more-link span {
+    font-weight: normal;
+}
+
+.b-read-more-link i {
+    font-size: 0.95rem;
+    color: #a0aec0 !important;
+}
+
+/* Container Base Stylesheet Config 
+.editorial-container {
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+    background-color: #EFEAE2; 
+}
+
+.main-news-headline {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 1.4;
+}
+.article-body-text p {
+    font-family: 'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.85;
+    color: #333333;
+    text-align: justify;
+    margin-bottom: 24px;
+    font-weight: normal;
+}
+.news-meta-action-bar {
+    font-size: 0.9rem;
+    color: #555555;
+}
+*/
+/* Precise Sticky Sidebar Integration */
+@media (min-width: 992px) {
+    /* Step 1: Tell the Bootstrap grid wrapper item to fit content instead of stretching */
+    .side-column-wrapper {
+        position: sticky;
+        align-self: flex-start; 
+        height: auto;
+    }
+
+    /* Step 2: Define strict positioning parameters relative to window bounds */
+    .sticky-sidebar-inner {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px; /* Distance space from the top window layout when scrolling */
+        z-index: 10;
+    }
+}
+
+/* Sidebar Tab Header Components styling details matching image_fc8566.png 
+.btn-sidebar-tab {
+    padding: 10px;
+    font-size: 1.05rem;
+    border: none;
+    background: none;
+}
+
+.tab-active {
+    background-color: #8c2d2d; 
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tab-inactive {
+    background-color: #f1eae1;
+    color: #444444;
+}
+
+.numbered-news-container {
+    background: #ffffff;
+    border: 1px solid #ebdcd0;
+}
+
+.num-news-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f5ede6;
+}
+
+.num-news-row:last-child {
+    border-bottom: none;
+}
+
+.num-icon {
+    font-size: 1.4rem;
+    color: #a0aec0;
+    font-weight: bold;
+    margin-right: 15px;
+    line-height: 1;
+}
+
+.num-news-text {
+    font-size: 0.95rem;
+    color: #222222;
+    line-height: 1.4;
+}
+*/
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}

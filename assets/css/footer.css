@@ -1,0 +1,373 @@
+/* ==========================================================================
+   Manobkantha Footer Layout CSS Override (Global Placeholder Optimized)
+   ========================================================================== */
+
+/* Main Full-Width Outer Blocks */
+.mk-root-force-wrapper {
+    background-color: #444444 !important;
+    color: #ffffff !important;
+    font-family: Arial, Helvetica, sans-serif, 'SolaimanLipi' !important;
+    display: block !important;
+    clear: both !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: 60px !important;
+    padding: 45px 0 0 0 !important;
+    position: relative !important;
+}
+
+/* Core Column Frame Container */
+.mk-core-container {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 20px 20px 20px !important;
+    box-sizing: border-box !important;
+}
+
+.mk-footer {
+    display: block !important;
+    unicode-bidi: isolate !important;
+}
+
+/* Brand Logo Header Line */
+.mk-main-title-row {
+    width: 100% !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+    margin-top: 20px !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 25px !important;
+    box-sizing: border-box !important;
+}
+
+.mk-main-title-row h3 {
+    margin: 0 !important;
+    opacity: 1 !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    color: #ffffff !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Structural Layout Grid System */
+.mk-structural-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important; /* Prevents overflow clipping */
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+}
+
+/* Editorial Profile Block Column */
+.mk-column-profile {
+    flex: 1 1 28% !important; /* Fluid layout base */
+    min-width: 250px !important;
+    box-sizing: border-box !important;
+}
+
+.mk-column-profile p.profile-title {
+    margin: 0 0 10px 0 !important;
+    opacity: 1 !important;
+    font-size: 19px !important;
+    color: #e0e0e0 !important;
+    line-height: 29px !important;
+    font-weight: 400 !important;
+}
+
+.mk-column-profile p.icon-text-line {
+    display: flex !important;
+    opacity: 1 !important;
+    align-items: center !important;
+    margin: 0 0 10px 0 !important;
+    font-size: 19px !important;
+    line-height: 29px !important;
+    font-weight: 400 !important;
+    color: #e0e0e0 !important;
+}
+
+.mk-column-profile p svg {
+    margin-right: 10px !important;
+    fill: #ffffff !important;
+    flex-shrink: 0 !important;
+}
+
+/* Social Alignment Matrix */
+.mk-social-links-row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    margin-top: 20px !important;
+}
+
+.mk-social-links-row a svg {
+    fill: #ffffff !important;
+    opacity: 1 !important;
+    transition: fill 0.2s ease-in-out !important;
+}
+
+/* Inner Navigation Category Columns */
+.mk-column-nav-node {
+    flex: 1 1 calc(18% - 20px) !important; /* Flexible column distribution system */
+    min-width: 145px !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.15) !important;
+    padding-left: 20px !important;
+    box-sizing: border-box !important;
+}
+
+.mk-column-nav-node h4 {
+    margin: 0 0 15px 0 !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+.mk-column-nav-node h4 a {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    font-size: 19px !important;
+    line-height: 24px !important;
+}
+
+.mk-column-nav-node ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.mk-column-nav-node ul li {
+    margin-bottom: 12px !important;
+}
+
+.mk-column-nav-node ul li a {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    font-size: 19px !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+
+}
+
+/* Dark Grey Bottom Copyright Strip Container */
+.mk-copyright-bar {
+    background-color: #3d3d3d !important;
+    width: 100% !important;
+    padding: 24px 0 !important;
+    box-sizing: border-box !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.mk-meta-links-line {
+    display: flex !important;
+    gap: 24px !important;
+    margin-bottom: 14px !important;
+    flex-wrap: wrap !important;
+}
+
+.mk-meta-links-line a {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    font-weight: 400 !important;
+}
+
+.mk-legal-text-string {
+    font-size: 17px !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+    line-height: 26px !important;
+    font-weight: 400 !important;
+}
+
+/* Global Link Interaction Rules */
+.mk-root-force-wrapper a:hover,
+.mk-column-nav-node a:hover,
+.mk-meta-links-line a:hover,
+.mk-social-links-row a:hover svg {
+    opacity: 1 !important;
+    color: #00bcd4 !important;
+    fill: #00bcd4 !important;
+}
+
+/* ==========================================================================
+   TARGETED FIX: FULL SCREEN WIDTH, TITLE INSET, & FLUID GRID ARCHITECTURE
+   ========================================================================== */
+
+/* Globally prevent horizontal document spilling across the window */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media (max-width: 991px) {
+    /* 1. Full Viewport Width Alignment & Edge Bleed */
+    .mk-root-force-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 30px !important;
+        margin-left: 0 !important; /* Force no left margin */
+        margin-right: 0 !important; /* Force no right margin */
+        padding: 25px 0 0 0 !important; /* 25px top, 0 left/right */
+        box-sizing: border-box !important;
+        position: relative !important;
+        left: 0 !important; /* Ensure it starts at the absolute edge */
+    }
+
+    /* Force the core container to expand fully to screen edges with no blank side spaces */
+    .mk-core-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important; 
+        box-sizing: border-box !important;
+    }
+
+    .mk-main-title-row {
+    width: 100% !important;
+    margin-top: 20px !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 25px !important;
+    padding-left: 35px !important; 
+    box-sizing: border-box !important;
+}
+
+    /* 2. Publisher Profile Column & Title Tweaks */
+    .mk-column-profile {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-bottom: 10px !important;
+        padding-left: 20px !important; 
+        padding-right: 20px !important;
+    }
+
+    /* Target the brand header directly to push it slightly to the right */
+    .mk-column-profile h3,
+    .mk-column-profile .footer-title,
+    #footer h3 {
+        padding-left: 15px !important; /* Moves title a little towards the right */
+    }
+
+    .mk-column-profile p.profile-title,
+    .mk-column-profile p.icon-text-line {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        margin-bottom: 8px !important;
+        word-break: break-word !important; 
+    }
+
+    .mk-social-links-row {
+        margin-top: 15px !important;
+        margin-bottom: 30px !important;
+        gap: 16px !important;
+        padding-left: 5px !important; /* Matches social row alignment to title offset */
+    }
+
+   /* 3. Fluid Responsive 2-Column Category Grid */
+    .mk-structural-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 0 !important; 
+        box-sizing: border-box !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Standardizes columns into 50% split viewports and strips wild borders */
+    .mk-structural-grid > div,
+    .mk-column-nav-node,
+    .mk-structural-grid .col-6 {
+        flex: 0 0 50% !important;
+        width: 50% !important;
+        max-width: 50% !important;
+        margin-bottom: 30px !important;
+        box-sizing: border-box !important;
+        border-left: none !important;
+        border-start: none !important;
+    }
+
+    /* Target the LEFT side categories (বিজ্ঞান ও প্রযুক্তি, চাকরি, ইত্যাদি) */
+    .mk-structural-grid > div:nth-of-type(odd),
+    .mk-column-nav-node:nth-of-type(odd),
+    .mk-structural-grid .col-6:nth-of-type(odd) {
+        border-left: none !important;
+        border-start: none !important;
+        padding-left: 15px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Target the RIGHT side categories (বিনোদন, ধর্ম, ইত্যাদি) and enforce the grid line */
+    .mk-structural-grid > div:nth-of-type(even),
+    .mk-column-nav-node:nth-of-type(even),
+    .mk-structural-grid .col-6:nth-of-type(even) {
+        border-left: 1px solid rgba(255, 255, 255, 0.15) !important;
+        border-start: none !important;
+        padding-left: 25px !important;
+        padding-right: 10px !important;
+    }
+
+    .mk-column-nav-node h4 a {
+        font-size: 16px !important;
+        line-height: 22px !important;
+    }
+
+    .mk-column-nav-node ul li a {
+        font-size: 14px !important;
+    }
+
+    /* 4. Full-width Stacked Meta Links Matrix Layout */
+    .mk-copyright-bar {
+        padding: 0 !important; 
+        border-top: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .mk-copyright-bar .mk-core-container {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .mk-meta-links-line {
+        flex-direction: column !important;
+        gap: 0 !important;
+        margin-bottom: 25px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .mk-meta-links-line a {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        padding: 14px 0 !important;
+        font-size: 14px !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+        margin-top: -1px !important; 
+        box-sizing: border-box !important;
+    }
+
+    /* 5. Centered Legal Text Output Formatting */
+    .mk-legal-text-string {
+        text-align: center !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
+        padding: 0 16px 30px 16px !important;
+        box-sizing: border-box !important;
+    }
+}

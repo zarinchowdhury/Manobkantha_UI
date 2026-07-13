@@ -1,0 +1,2842 @@
+/* ==========================================================================
+   GLOBAL TYPOGRAPHY CONFIGURATION (SolaimanLipi, Helvetica, sans-serif)
+   ========================================================================== */
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+/* Applies the font family globally across the entire website structure */
+html, 
+body, 
+p, 
+a, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+span, 
+div, 
+button, 
+input, 
+select, 
+textarea {
+  font-family: 'SolaimanLipi', Helvetica, sans-serif !important;
+}
+
+/*==================================================
+RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#d50000;
+    --dark:#2f2d2d;
+    --light:#ffffff;
+    --gray:#666;
+    --border:#e5e5e5;
+    --bg:#f8f8f8;
+    --transition:.3s ease;
+
+}
+
+body{
+
+    font-family:'SolaimanLipi', 'Noto Sans Bengali', sans-serif;
+    background:var(--bg);
+    color:#222;
+    line-height:1.6;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+    margin:0;
+    padding:0;
+
+}
+
+img{
+
+    display:block;
+    max-width:100%;
+
+}
+
+.container{
+
+    max-width:1400px;
+
+}
+
+section{
+
+    padding:40px 0;
+
+}
+/*==================================================
+
+TOP BAR
+
+==================================================*/
+
+.topbar {
+
+    background: #EFEAE2;
+
+    border-bottom: 1px solid var(--border);
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+.top-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+}
+
+
+
+.top-links li {
+
+    position: relative;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+}
+
+
+
+.top-links li:not(:last-child)::after {
+
+    content: "|";
+
+    position: relative;
+
+    left: 9px;
+
+    color: #888;
+
+}
+
+
+
+.top-links a {
+
+    transition: var(--transition);
+
+}
+
+
+
+.top-links a:hover {
+
+    color: var(--primary);
+
+}
+
+
+
+/* --- Refructured Social Icons Layout Container --- */
+
+.social-icons {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    list-style: none; /* Cleans list markers if any */
+
+    padding: 0;
+
+    margin: 0;
+
+    gap: 10px; /* Equal, subtle minimalist spacing between items */
+
+}
+
+
+
+/* Uniform Dimensions Mask Layer configuration */
+
+.social-icons li {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+/* Perfect Solid Black Circle with White Knock-out Inner Layer Engine */
+
+.social-icons a {
+
+    width: 28px;               /* Exactly the same uniform dimension width constraint */
+
+    height: 28px;              /* Explicitly match height for a 1:1 round aspect ratio */
+
+    background-color: #000000; /* Solid black circle background mask layout */
+
+    border-radius: 50%;        /* Forces flawless perfect circle clip */
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none !important;
+
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease;
+
+}
+
+
+
+/* White Knock-out (Negative Space Logo Vector Scale Configuration) */
+
+.social-icons a i {
+
+    color: #ffffff !important; /* Pure high-contrast white logo negative knockout visual */
+
+    font-size: 14px;           /* Uniform nested dimensions sizing track */
+
+    line-height: 1;
+
+    display: inline-block;
+
+    transition: none;          /* Icon font holds its white knockout mask state */
+
+}
+
+
+
+/* Clean Micro-Interactive Hover Actions states */
+
+.social-icons a:hover {
+
+    background-color: #222222; /* Soft background shift on user cursor trace */
+
+    transform: translateY(-1px); /* Clean interactive lift effect */
+
+}
+
+
+
+/*==================================================
+
+LOGO AREA
+
+==================================================*/
+
+
+
+.header-middle{
+
+    background:#EFEAE2;
+
+    padding:30px 0;
+
+}
+
+.site-logo{
+
+    width:290px;
+
+}
+
+.ad-banner{
+
+    width:728px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    margin-left:auto;
+
+}
+
+/* ==================================================================
+   FINAL FIXED MOBILE DRAWER AND NAVIGATION OVERRIDES (IMAGE 2 ALIGNED)
+   ================================================================== */
+
+/* --- Base Structural Panel Alignment Rules --- */
+#exactMobileDropdownMenu,
+#exactMobileDropdownMenu * {
+    transform: none !important;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    box-sizing: border-box !important;
+}
+
+/* Slide Drawer Container Configs */
+nav#exactMobileDropdownMenu.menu-mobile {
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 290px !important; 
+    height: 100vh !important;
+    background-color: #ffffff !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transform: translateX(-100%) !important;
+    z-index: 9999999 !important;
+}
+
+nav#exactMobileDropdownMenu.menu-mobile.open-active {
+    transform: translateX(0px) !important;
+}
+
+/* --- Page Dim Backdrop Overlay Window --- */
+.nav-backdrop-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.45) !important; 
+    z-index: 9999998 !important; 
+    display: none !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-backdrop-overlay.visible-active {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+/* --- Floating Canvas Close Action Button (X) - Increased Size --- */
+.outside-close-canvas-btn {
+    position: fixed !important;
+    top: 15px !important;
+    left: 310px !important; 
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-size: 32px !important; /* Increased size as requested */
+    cursor: pointer !important;
+    z-index: 10000000 !important;
+    display: none !important;
+    padding: 5px !important;
+    line-height: 1 !important;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.outside-close-canvas-btn:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+}
+
+.outside-close-canvas-btn.visible-active {
+    display: block !important;
+}
+
+/* --- Branding Segment Underline Decorator Block --- */
+.logo-sidenav {
+    position: relative !important;
+    border-bottom: 1px solid #ededed !important;
+    padding-top: 25px !important; /* Added clean padding space above the logo */
+    padding-bottom: 20px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.logo-accent-underline {
+    width: 65px !important;
+    height: 1.5px !important;
+    background-color: #7c49fb !important; 
+    margin: 12px auto 0 auto !important;
+}
+
+/* --- Mobile Menu Typography Configurations --- */
+.clean-mobile-links-list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.clean-mobile-links-list li {
+    border-bottom: 1px solid #f2f4f7 !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.clean-mobile-links-list li a,
+.dropdown-trigger-bar {
+    font-family: 'SolaimanLipi', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 19px !important;
+    line-height: 29px !important;
+    color: #1b1b1b !important;
+    padding: 13px 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    background-color: #ffffff !important;
+    transition: color 0.2s ease !important;
+}
+
+/* Indigo Hover Color Transition for Mobile Links */
+.clean-mobile-links-list li a:hover,
+.dropdown-trigger-bar:hover,
+.custom-sub-dropdown-panel li a:hover {
+    color: rgb(79, 70, 229) !important;
+}
+
+/* --- Crimson Red-Orange Square Bullets --- */
+.custom-menu-bullet {
+    display: inline-block !important;
+    width: 8px !important;
+    height: 8px !important;
+    background-color: #e64a19 !important; 
+    margin-right: 14px !important;
+    flex-shrink: 0 !important;
+    transform: none !important;
+    border-radius: 0px !important;
+}
+
+.custom-menu-bullet.child-bullet {
+    width: 8px !important; /* Kept same square sizing as parent links */
+    height: 8px !important;
+    margin-right: 14px !important;
+    background-color: #e64a19 !important;
+}
+
+/* --- Collapsible Mobile Dropdowns Layout --- */
+.dropdown-trigger-bar {
+    justify-content: space-between !important;
+}
+
+.custom-arrow-indicator {
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 4px solid transparent !important;
+    border-right: 4px solid transparent !important;
+    border-top: 5px solid #444444 !important;
+    display: inline-block !important;
+    transition: transform 0.2s ease !important;
+}
+
+.custom-sub-dropdown-panel {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 0 0 15px !important; 
+    background-color: #fcfdfe !important;
+    display: none !important;
+    width: 100% !important;
+}
+
+.custom-sub-dropdown-panel li {
+    border-bottom: 1px solid #f2f4f7 !important;
+}
+
+.custom-sub-dropdown-panel li a {
+    padding: 11px 24px !important;
+    background-color: #fcfdfe !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.has-custom-mobile-dropdown.dropdown-open .custom-sub-dropdown-panel {
+    display: block !important;
+}
+
+.has-custom-mobile-dropdown.dropdown-open .custom-arrow-indicator {
+    transform: rotate(180deg) !important;
+}
+
+/* ==================================================================
+   EXACT IMAGE-MATCHING MOBILE COPYRIGHT STYLING
+   ================================================================== */
+.mobile-copyright-wrapper {
+    margin-top: 3rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-bottom: 2rem !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.custom-copyright-text {
+    font-family: 'SolaimanLipi', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 23px !important;
+    color: #4a4a4a !important; /* Flat charcoal slate gray from the image */
+    font-weight: 400 !important; /* Removes bold styling completely */
+    margin: 0 !important;
+}
+
+.custom-copyright-text .copyright-brand-link {
+    color: rgb(79, 70, 229) !important; /* Indigo blue link matching the image look */
+    text-decoration: none !important;
+    font-weight: 400 !important;
+    display: inline-block !important;
+    transition: opacity 0.2s ease;
+}
+
+.custom-copyright-text .copyright-brand-link:hover {
+    opacity: 0.8;
+}
+
+/* ==================================================================
+   DESKTOP CORE AND BASE MAIN BAR CONFIGURATIONS
+   ================================================================== */
+.custom-exact-navbar {
+    background-color: #333333 !important;
+    border-bottom: 5px solid #2596be !important;
+    width: 100%;
+}
+
+.nav-inner-container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+
+.nav-left-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+button.nav-hamburger {
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 24px;
+    height: 15px;
+    padding: 0 !important;
+    margin-right: 24px;
+}
+
+button.nav-hamburger span {
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background-color: #ffffff !important;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+    position: relative;
+}
+
+/* Enhanced Visual Border Separator Line Elements */
+.nav-logo::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 12px;    /* Maximized height stretch */
+    bottom: 12px; /* Maximized height stretch */
+    width: 1px;  /* Thickened line presence */
+    background-color: rgb(253, 253, 253) !important;
+}
+
+.nav-logo img {
+    height: 24px !important;
+    width: auto;
+}
+
+.nav-menu-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-menu-links > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-menu-links > li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 12px;    /* Maximized height stretch */
+    bottom: 12px; /* Maximized height stretch */
+    width: 1px;  /* Thickened line presence */
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.nav-menu-links > li > a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 19px;
+    padding: 0 16px !important;
+    white-space: nowrap;
+    transition: color 0.2s ease !important;
+}
+
+/* Indigo Hover Color Transition on Main Navbar List */
+.nav-menu-links > li > a:hover {
+    color: rgb(79, 70, 229) !important;
+}
+
+.dropdown-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-top: 4px solid #ffffff;
+    vertical-align: middle;
+}
+
+/* Left-shifted Search Layout Wrapper */
+.nav-right-search {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 20px; /* Shifted toward left dynamically away from right screen edge */
+}
+
+.search-btn {
+    color: #ffffff !important;
+    font-size: 16px;
+    transition: color 0.2s ease !important;
+}
+
+.search-btn:hover {
+    color: rgb(79, 70, 229) !important;
+}
+
+/* Desktop Hover Dropdown Panel with Customized Color Border Line */
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2b2b2b;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    min-width: 160px;
+    display: none;
+    z-index: 999;
+    border-top: 3px solid rgb(79, 70, 229) !important; /* Customized Top Border line */
+}
+
+.has-dropdown:hover .nav-dropdown-menu {
+    display: block;
+}
+
+.nav-dropdown-menu li a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 9px 18px;
+    display: block;
+    transition: color 0.2s ease, background-color 0.2s ease !important;
+}
+
+/* Indigo text hover option variant on background panels */
+.nav-dropdown-menu li a:hover {
+    color: rgb(79, 70, 229) !important;
+    background-color: #ffffff !important;
+}
+
+/* ==================================================
+   GLOBAL OVERFLOW CLEANUP FOR STICKY ELEMENT
+================================================== */
+html, body {
+    overflow-x: clip !important;   
+    overflow-y: visible !important; 
+    height: auto !important;
+}
+
+header, .site-header, .main-header-wrapper {
+    overflow: visible !important;
+    height: auto !important;
+}
+/* ==================================================
+   RESPONSIVE LAYOUT OVERRIDES (MOBILE & TABLET ONLY)
+================================================== */
+@media (max-width: 700px) {
+    /* 1. Pristine Top Bar Configuration Matching Image */
+    .topbar {
+        background: #ffffff !important;
+        height: auto !important;
+        padding: 12px 12px !important;
+        border-bottom: 1px solid #e2e2e2 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        display: block !important;
+    }
+
+    .topbar .container,
+    .topbar .row {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    .mobile-topbar-row {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important; 
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+    }
+
+    .mobile-topbar-row .col-6,
+    .mobile-topbar-row > div,
+    .topbar [class*="col-"] {
+        width: auto !important;
+        flex: 0 0 auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .top-links {
+        display: flex !important;
+        gap: 16px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+    .top-links li {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        font-family: 'SolaimanLipi', Arial, sans-serif !important;
+    }
+
+    .top-links li a {
+        color: #0F2C59 !important;
+        text-decoration: none !important;
+    }
+
+    .top-links li:not(:last-child)::after {
+        display: none !important;
+    }
+
+    .social-icons {
+        display: flex !important;
+        gap: 14px !important; 
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        margin-left: auto !important;
+    }
+
+    .social-icons a {
+        background-color: transparent !important;
+        width: auto !important;
+        height: auto !important;
+        border-radius: 0 !important;
+        transform: none !important;
+        display: inline-flex !important;
+        align-items: center !important;
+    }
+
+    .social-icons a i,
+    .social-icons a svg {
+        color: #000000 !important;
+        font-size: 14px !important; 
+        display: block !important;
+    }
+
+    /* TikTok Icon Customization: Gives it a black background square container */
+    .social-icons a[href*="tiktok"] i,
+    .social-icons a[href*="tiktok"] svg,
+    .social-icons .fa-tiktok,
+    .social-icons [class*="tiktok"] {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        padding: 2px 2px !important;
+        border-radius: 4px !important;
+        font-size: 12px !important;
+        display: inline-block !important;
+        line-height: 1 !important;
+    }
+
+    /* 2. Absolute Sticky Core Engine & Scrolling Red Line Elimination */
+    #showbacktop,
+    #showbacktop.full-nav,
+    div[id="showbacktop"] {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 99999 !important;
+        display: block !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+    }
+
+    .custom-exact-navbar {
+        background-color: #EFEAE2 !important; 
+        border-bottom: 4px solid #800000 !important; 
+        position: relative !important; 
+        width: 100% !important;
+        height: 56px !important; 
+        z-index: 99999 !important;
+        display: block !important;
+        transition: border-color 0.15s ease-out !important;
+    }
+
+    /* JS Toggles: Strips red line instantly when themes inject sticky tracking classes */
+    .sticky .custom-exact-navbar,
+    .is-sticky .custom-exact-navbar,
+    [style*="fixed"] .custom-exact-navbar {
+        border-bottom: 0px solid transparent !important;
+        border-bottom-color: transparent !important;
+    }
+
+    /* Modern Native CSS Scroll-Driven Architecture to vanish border lines immediately on layout shift */
+    @supports (animation-timeline: scroll()) {
+        @keyframes clearMobileRedLine {
+            to { 
+                border-bottom-color: transparent !important;
+                border-bottom: 0px solid transparent !important;
+            }
+        }
+        .custom-exact-navbar {
+            animation: clearMobileRedLine linear both;
+            animation-timeline: scroll();
+            animation-range: 0px 25px;
+        }
+    }
+
+    .nav-inner-container {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        height: 56px !important; 
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        position: relative !important; 
+        box-sizing: border-box !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* ==================================================================
+   3. Hamburger & Search Alignment & Layout Visibility Filters
+   ================================================================== */
+
+/* Hides the brand logo wrapper inside the mobile hamburger slide drawer panel */
+.menu-mobile .header-middle {
+    display: none !important;
+}
+
+body[style*="overflow: hidden"] .header-middle,
+body[style*="overflow:hidden"] .header-middle {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* 3. Hamburger Layout Mechanics */
+button.nav-hamburger {
+    margin: 0 !important;
+    width: 26px !important;
+    height: 18px !important;
+    background: transparent !important;
+    border: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 0 !important;
+    z-index: 101000 !important;
+}
+
+button.nav-hamburger span {
+    background-color: #000000 !important;
+    height: 3px !important;
+    width: 100% !important;
+    border-radius: 0px !important;
+    display: block !important;
+}
+    .nav-right-search {
+        margin-left: auto !important;
+        z-index: 101000 !important;
+    }
+
+    .search-btn {
+        color: #000000 !important;
+        font-size: 22px !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    /* 4. Adaptive Center Desktop Logo Layer */
+    .nav-logo {
+        display: none !important;
+    }
+
+
+
+    /* Places the large desktop section inline directly over the navbar using cross-browser translation tracking */
+    .header-middle {
+        position: absolute !important;
+        left: 50% !important;
+        top: 75px !important; /* Locks it precisely center inside your 56px custom-exact-navbar wrapper */
+        transform: translate(-50%, -50%) !important;
+        z-index: 100000 !important;
+        width: auto !important;
+        height: 44px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+    }
+
+    /* If the theme's scrolling JavaScript changes layout wrappers, this guarantees execution coordinates stay centered */
+    .sticky .header-middle,
+    .is-sticky .header-middle,
+    [style*="fixed"] ~ .header-middle {
+        position: fixed !important;
+        top: 28px !important;
+    }
+
+    .header-middle .container,
+    .header-middle .row,
+    .header-middle [class*="col-"] {
+        display: block !important;
+        width: auto !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .header-middle a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 100% !important;
+        width: auto !important;
+    }
+
+    /* Scales your desktop logo asset (logo.png) to fit perfectly inside the active bar layout rules */
+    .header-middle img.site-logo {
+        height: 36px !important; 
+        width: auto !important;
+        max-width: 185px !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    /* 5. Collapsible Mobile Menu Systems */
+    .nav-menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        background-color: #333333;
+        height: auto;
+        padding: 10px 0;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 99999;
+    }
+
+    .nav-menu-links.open-active {
+        display: flex !important;
+    }
+
+    .nav-menu-links > li {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .nav-menu-links > li::after {
+        display: none !important;
+    }
+
+    .nav-menu-links > li > a {
+        width: 100%;
+        color: #ffffff !important;
+        padding: 14px 20px !important;
+        border-bottom: 1px solid #444444;
+        box-sizing: border-box;
+    }
+
+    .nav-dropdown-menu {
+        position: relative !important;
+        top: 0 !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        background-color: #222222 !important;
+        padding-left: 20px !important;
+    }
+}
+ /* ==================================================
+   NEWS SITE INTEGRATED INTERFACE SPECIFICATIONS
+   ================================================== */
+
+:root {
+    --brand-red: #8a2be2;
+    --card-text-dark: #222222;
+    --card-text-muted: #666666;
+    --card-border-color: #EFEAE2;
+    --font-bengali-stack: "SolaimanLipi", 'Noto Sans Bengali', sans-serif;
+    
+    /* Global Framework Variables Integration Rules */
+    --bs-font-sans-serif: "SolaimanLipi",'Noto Sans Bengali', sans-serif;
+    --bs-body-bg-fs: #EFEAE2;
+}
+
+/* Page Scaffolding Parameters Override */
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    background-color: #EFEAE2 !important; /* Uniform deep cream color page coverage */
+}
+
+/* Main Content Card Properties Restructure */
+.card-full {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #EFEAE2;
+    border: 1px solid var(--card-border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Image Wrapper Setup for Flash Animation Effect */
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #000; /* Dark background underlayer anchors the brightness transition */
+}
+
+.ratio_360-202 {
+    position: relative;
+    width: 100%;
+    padding-top: 56.11%; 
+    background-color: #EFEAE2;
+}
+
+.ratio_360-202 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Creates the white flash look by rapidly shifting image opacity against a white container layer */
+.card-full:hover .ratio_360-202 img {
+    opacity: 0.85; /* Soft quick flash overlay brightness tint */
+}
+
+/* ==================================================
+   FIXED ALIGNMENT COMPONENT OVERRIDES
+   ================================================== */
+
+/* CHANGED LEFT/RIGHT PADDING TO 0 TO ALIGN TEXT WITH IMAGE EDGES */
+.card-body {
+    padding: 12px 0 5px 0; /* 12px top spacing under image, 0px sides for flush alignment, 5px bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Static Body Text Content Properties - Hover Removed */
+.card-body .card-text {
+    color: var(--card-text-muted);
+    margin-top: 0;
+}
+
+/* REMOVED DEFAULT H2 BROWSER MARGINS THAT CAUSE TOP MISALIGNMENT */
+.card-title.display-6 {
+    font-family: var(--font-bengali-stack);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-top: 0;       /* Removes browser default top spacing */
+    margin-bottom: 8px;  /* Clean space between title and timestamp */
+}
+
+.card-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+/* TARGETED HOVER STATE: ONLY title text link updates color */
+.card-full:hover .card-title a,
+.card-title a:hover {
+    color: var(--brand-red) !important;
+}
+/* FORCE OVERRIDE FRAMEWORK PADDING */
+article.card-full .card-body {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 12px !important;
+    padding-bottom: 5px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Clear any inherited paragraph or header margins messing up vertical grid lines */
+article.card-full .card-title {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+article.card-full p.card-text {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+/* ==================================================
+   1. SPECIFIC SPECIFICATION: "শীর্ষ সংবাদ" BLOCK LAYER
+   ================================================== */
+.top-news-section-wrapper {
+    margin-bottom: 25px;
+}
+
+/* Compact Header Underline Frame Base */
+.top-news-header-block {
+    border-bottom: 1px solid #7e3ad2; /* Thin accent horizontal rule layer spans across column */
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+/* Solid Cobalt Blue Rectangular Badge block specs */
+.top-news-badge {
+    background-color: #5262ec !important; /* Royal cobalt blue theme color mapping */
+    color: #ffffff !important;
+    font-family: var(--font-bengali-stack);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px 12px !important; /* Compact design padding constraint configuration */
+    display: inline-block;
+    border-radius: 0; /* Strict crisp rectangle shape metrics */
+}
+
+/* Core Headline Lists Configurations */
+.top-news-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.top-news-list li {
+    border-bottom: 1px dashed #d1cbc4; /* Noticeable clean gray item dividers rule */
+    padding: 10px 0 !important; /* Spreading text lines apart so they are easily clickable */
+}
+.top-news-list li:last-child {
+    border-bottom: none;
+}
+
+/* Anchor styling including pure CSS sleek right angle brackets (>) */
+.top-news-list li a {
+    display: flex;
+    align-items: flex-start;
+    color: #111111; /* Clean dark grey text */
+    font-family: 'SolaimanLipi', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500; /* Regular typography weight assignment */
+    line-height: 24px;
+    text-decoration: none;
+    transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+/* Custom list bullet indicator injection rule */
+.top-news-list li a::before {
+    content: ">";
+    font-family: "SolaimanLipi",Helvetica, sans-serif;
+    font-weight: 500;
+    color: #000000; /* Light gray accent indicator overlay status */
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 24px;
+}
+
+/* Traditional Web Hover Event Rules */
+.top-news-list li a:hover {
+    color: #8c2d36; /* Shifts blue on hover interaction tracks */
+    text-decoration: underline; /* Standard web response highlight underline */
+}
+
+/* ==================================================
+   2. SPECIFIC SPECIFICATION: TABBED LEADERBOARD TABLE
+   ================================================== */
+.newspaper-tab-widget {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+/* Tab Header Navigation Bar Core Structure Layout */
+.widget-tab-headers.nav-tabs {
+    border-bottom: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.widget-tab-headers .nav-item {
+    flex: 1;
+}
+
+/* Uniform Anchor Navigation Tabs Layout */
+.widget-tab-headers .nav-link {
+    font-family: var(--font-bengali-stack);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    padding: 8px 16px !important; /* Generous prominent hit targets padding properties */
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    
+    /* Inactive State Base Default Values */
+    background-color: transparent;
+    color: #4f46e5 !important; /* Dark blue/purple text signaling clickable states */
+    transition: all 0.2s ease;
+}
+
+/* Active Tab Styles State (Solid Maroon/Burgundy Accent) */
+.widget-tab-headers .nav-link.active {
+   background: linear-gradient(to right, #7a2626, #a67c7c) !important; /* Maroon Burgundy theme hex setup */
+    color: #ffffff !important; /* Pure white text layout color profile */
+}
+
+/* Table Body Grid Frame Overlay */
+.widget-tab-body {
+    background-color: #fdfbf3 !important; /* Soft light cream background tint separation */
+    border: 1px solid #e8e2d5;
+    border-top: none;
+}
+
+/* Internal Row Components Configuration */
+.leaderboard-list {
+    padding: 0;
+    margin: 0;
+}
+.leaderboard-list li {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 10px !important; /* Comfortable row breathing buffer parameters */
+    border-bottom: 1px solid #eee; /* Faint horizontal line rule */
+}
+.leaderboard-list li:last-child {
+    border-bottom: none;
+}
+
+/* Left-Aligned Large Stylized Light Grey Numbers */
+.leaderboard-number {
+    font-family: var(--font-bengali-stack);
+    font-size: 30px;
+    font-weight: 600;
+    color: #b9b8b8; /* Soft low opacity color tone layout constraint */
+    line-height: 24px;
+    margin-right: 12px;
+    display: inline-block;
+    min-width: 18px;
+    text-align: center;
+}
+
+/* Headline List Text Typography Mapping */
+.leaderboard-list li a {
+    color: #222222;
+    font-family: var(--font-bengali-stack);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
+    word-wrap: break-word;
+    transition: color 0.15s ease;
+}
+.leaderboard-list li a:hover {
+    color: #8c2d36; /* Changes link toward burgundy color on pointer tracking */
+}
+
+/* Footer Block Engine ("সব খবর") Setup */
+.widget-footer-block {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.btn-all-news {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, #7a2626, #a67c7c) !important; /* Styled identically to active maroon header */
+    color: #ffffff !important;
+    font-family: var(--font-bengali-stack);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none !important;
+    padding: 10px 0;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.2s ease;
+}
+.btn-all-news:hover {
+    background-color: #73232a !important; /* Slightly deeper tone on manual active state response overlay */
+}
+
+/* Live Streaming Components Overlay Parameters */
+.bg-lg-shadow {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+}
+.live-badge {
+    background-color: #ff0000;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+/* ==================================================
+   CONTENT ARCHITECTURE MOBILE RESPONSIVE OVERRIDES
+   ================================================== */
+@media (max-width: 991.98px) {
+    /* 1. Global Card Scaling Adjustments */
+    .card-title.display-6 {
+        font-size: 24px !important;    /* Slightly scales down huge headlines on mobile viewports */
+        line-height: 28px !important;  /* Balances word-wrapping bounds */
+        margin-bottom: 6px !important;
+    }
+
+    .card-body {
+        padding: 10px 0 5px 0 !important; /* Tightens up container gutters for smaller touch displays */
+    }
+
+    /* 2. Top News ("শীর্ষ সংবাদ") Block Layer Refinements */
+    .top-news-section-wrapper {
+        margin-bottom: 20px !important;
+    }
+
+    .top-news-badge {
+        font-size: 18px !important;    /* Makes the badge cleaner on small screens */
+        padding: 4px 10px !important;
+    }
+
+    .top-news-list li a {
+        font-size: 15px !important;    /* Optimizes touch-target list text sizing */
+        line-height: 22px !important;
+        padding: 4px 0 !important;
+    }
+
+    /* 3. Tabbed Widget Navigation Options */
+    .widget-tab-headers .nav-link {
+        font-size: 16px !important;    /* Prevents tab headers from breaking into chaotic multi-lines */
+        padding: 10px 8px !important;  /* Provides clean, balanced tap-friendly hit blocks */
+        line-height: 20px !important;
+    }
+
+    /* 4. Leaderboard Numerical List Row Components */
+    .leaderboard-list li {
+        padding: 10px 8px !important;  /* Snug fit inside smaller display dimensions */
+    }
+
+    .leaderboard-number {
+        font-size: 26px !important;    /* Modifies size metrics of background list indexes */
+        margin-right: 10px !important;
+    }
+
+    .leaderboard-list li a {
+        font-size: 15px !important;    /* Highly legible body scaling for mobile news items */
+        line-height: 22px !important;
+    }
+
+    /* 5. Footer Call To Action Button Styling */
+    .btn-all-news {
+        padding: 12px 0 !important;    /* Increases heights slightly for better thumb interactions */
+        font-size: 15px !important;
+    }
+}
+/* ==================================================
+   NEWS HIGHLIGHTS CUSTOM LAYOUT SPECIFICATIONS
+   ================================================== */
+:root {
+    --brand-red: #b90000;
+    --card-text-dark: #222222;
+    --card-text-muted: #666666;
+    --card-border-color: #e8e5da;
+    --font-bengali-stack: "SolaimanLipi",'Noto Sans Bengali', sans-serif;
+    
+    /* Global Framework Variables Integration Rules */
+    --bs-font-sans-serif: "SolaimanLipi",'Noto Sans Bengali', sans-serif;
+    --bs-body-bg-fs: var(--card-border-color);
+}
+
+/* Page Scaffolding Parameters Override */
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    background-color: #EFEAE2 !important; /* Uniform deep cream color page coverage */
+}
+
+/* Main Content Card Properties Restructure */
+.card-full {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #EFEAE2;
+    border: 1px solid var(--card-border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.ratio_360-202 {
+    position: relative;
+    width: 100%;
+    padding-top: 56.11%; 
+    background-color: #EFEAE2;
+    overflow: hidden;
+}
+.ratio_360-202 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-body {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.card-title.display-6 {
+    font-family: var(--font-bengali-stack);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.card-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+}
+.hover-a {
+    transition: color 0.25s ease-in-out;
+}
+.card-full:hover .hover-a,
+.hover-a:hover {
+    color: var(--brand-red);
+}
+
+/* =======================================================
+   HIGHLIGHTS CONTEXTUAL TINT WRAPPER EXTENSIONS (FIXED)
+   ======================================================= */
+
+/* 1. Main Highlights Isolation Container */
+.news-highlights-zone-container {
+    background-color: var(--card-border-color) !important; /* Change this hex/variable freely to update ONLY this section */
+    padding: 20px !important; 
+    border-radius: 4px;
+}
+
+/* 2. Isolated Inner Cards (Prevents affecting standard cards) */
+.news-highlights-zone-container .highlight-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: transparent; /* Makes cards match the container color seamlessly */
+    border: none;
+    overflow: hidden;
+}
+
+.news-highlights-zone-container .highlight-card-body {
+    padding: 10px 0; /* Tight padding suited for small columns */
+    display: flex;
+    flex-direction: column;
+}
+
+.news-highlights-zone-container .highlight-card-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 16px; /* Optimized crisp size for 4-column layout */
+    line-height: 1.4;
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+
+.news-highlights-zone-container .highlight-card-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+.news-highlights-zone-container .highlight-card:hover .highlight-card-title a {
+    color: var(--brand-red);
+}
+
+.news-highlights-zone-container .highlight-card-meta {
+    font-size: 12px;
+    color: var(--card-text-muted);
+}
+
+/* Header border sync */
+.border-danger-custom {
+    border-bottom: 2px solid var(--brand-red) !important;
+    padding-bottom: 6px;
+}
+
+.section-main-title {
+    font-family: var(--font-bengali-stack);
+    color: var(--card-text-dark);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* Sidebar Ad configuration */
+.sidebar-ad-wrapper {
+    width: 100%;
+    height: auto;
+}
+.sidebar-ad-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =======================================================
+   MORE/SEE ALSO SECTION GRID SYNC & ALIGNMENT (FIXED)
+   ======================================================= */
+
+/* 1. Main Isolation Wrapper Card with explicit mathematical desktop layout sizing */
+.more-see-also-zone-container {
+    background-color: #ffffff !important; /* Forces the link area white as seen in target */
+    border: 1px solid #e2e8f0;            /* Soft border perimeter */
+    border-radius: 6px;
+    margin-top: 24px;                    /* Consistent breathing vertical layout margin gap */
+    overflow: hidden;                     /* Keeps corner clip radiuses clean */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    
+    /* DESKTOP ENGINE: Automatically spans through the highlights grid and ends exactly halfway across the ad */
+    width: 100%;
+    max-width: calc(75% + 12.5%);         /* 75% (Highlights column) + 12.5% (Exactly half of the 25% Ad column) */
+}
+
+/* 2. Top Header Strip Container with Soft Light Blue/Lavender Accent */
+.more-see-also-zone-container .more-see-also-header {
+    background-color: #eef2ff !important;  /* Distinct light lavender/blue header zone tint */
+    padding: 14px 20px !important;         /* Generous internal label padding */
+    border-bottom: 1px solid #e2e8f0;      /* Separation line between header and links */
+}
+
+/* 3. Heading Component Typography */
+.more-see-also-zone-container .section-more-title {
+    font-family: var(--font-bengali-stack);
+    color: #1e293b;                        /* Refined slate dark blue/grey color */
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+/* 4. Bulletless Inner Links Clean List */
+.more-see-also-zone-container .more-links-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* 5. Flex Box Rows + Interactive Divider Board Segments */
+.more-see-also-zone-container .more-links-item {
+    display: flex;
+    justify-content: space-between;        /* Shoves text link to left, arrow icon to far right */
+    align-items: center;
+    padding: 16px 20px;                     /* Identical side-padding room for matching layout rhythm */
+    border-bottom: 1px solid #f1f5f9;       /* Ultra soft clean grey horizontal list separators */
+    transition: background-color 0.2s ease;
+}
+
+.more-see-also-zone-container .more-links-item:last-child {
+    border-bottom: none;                    /* Disables bottom double border boundaries */
+}
+
+.more-see-also-zone-container .more-links-item:hover {
+    background-color: #f8fafc;              /* Soft interaction backdrop hint on link hover */
+}
+
+/* 6. Text Anchors Configuration */
+.more-see-also-zone-container .more-links-item a {
+    font-family: var(--font-bengali-stack);
+    color: var(--card-text-dark);
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: normal;
+    flex-grow: 1;                           /* Entire item row background remains clickable */
+}
+
+.more-see-also-zone-container .more-links-item:hover a {
+    color: var(--brand-red);                /* Highlights text dynamically on hover */
+}
+
+/* 7. Right Edge CSS Chevron Indicator Icon */
+.more-see-also-zone-container .chevron-arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #94a3b8;          /* Medium grey chevron tone */
+    border-right: 2px solid #94a3b8;
+    transform: rotate(45deg);               /* Creates clean right-facing arrow */
+    margin-right: 4px;
+    transition: border-color 0.2s ease;
+}
+
+.more-see-also-zone-container .more-links-item:hover .chevron-arrow {
+    border-color: var(--brand-red);         /* Turns chevron red along with the link on hover */
+}
+
+/* ==================================================
+   NEWS HIGHLIGHTS & MORE ZONE RESPONSIVE OVERRIDES
+   ================================================== */
+@media (max-width: 991.98px) {
+    /* 1. Global Core Cards & Highlight Elements */
+    .card-title.display-6 {
+        font-size: 18px !important;    /* Balances headline scaling for multi-column wraps */
+        line-height: 22px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .card-body {
+        padding: 12px !important;      /* Tighter card gutters on mobile */
+    }
+
+    /* 2. Highlights Zone Wrapper Structure */
+    .news-highlights-zone-container {
+        padding: 15px !important;       /* Clean breathing space on small edges */
+        margin-bottom: 20px !important;
+    }
+
+    .news-highlights-zone-container .highlight-card {
+        margin-bottom: 16px !important; /* Stacked breathing gap on smaller touchscreens */
+    }
+
+    .news-highlights-zone-container .highlight-card:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .news-highlights-zone-container .highlight-card-title {
+        font-size: 15px !important;    /* Highly legible body size on portrait device screens */
+        line-height: 20px !important;
+    }
+
+    /* 3. Sidebar Ad Module Viewport Adaptations */
+    .sidebar-ad-wrapper {
+        margin: 20px auto !important;  /* Centers advertisement graphic banners on mobile stacks */
+        max-width: 100% !important;
+    }
+
+    /* 4. "More / See Also" Grid System Adaptations */
+    .more-see-also-zone-container {
+        max-width: 100% !important;    /* Breaks desktop calculation matrix to take full fluid width */
+        margin-top: 20px !important;
+        border-radius: 4px !important;  /* Normalizes aesthetic design variables */
+    }
+
+    .more-see-also-zone-container .more-see-also-header {
+        padding: 12px 16px !important; /* Slightly more compact label banner header spacing */
+    }
+
+    .more-see-also-zone-container .section-more-title {
+        font-size: 16px !important;    /* Scaled down cleanly */
+    }
+
+    .more-see-also-zone-container .more-links-item {
+        padding: 14px 16px !important; /* Generous, tap-friendly touch screen row sizes */
+    }
+
+    .more-see-also-zone-container .more-links-item a {
+        font-size: 16px !important;    /* Highly clear and scan-friendly font target scaling */
+        line-height: 22px !important;
+    }
+}
+
+/* =======================================================
+   INTERNATIONAL & OPINION SECTION ENGINE
+   ======================================================= */
+
+/* --- LEFT SIDE: INTERNATIONAL NEWS GRID --- */
+.international-section-header {
+    border-bottom: 2px solid #cbd5e1; /* Accent clean gray layout divider line */
+    padding-bottom: 8px;
+    
+}
+
+.international-main-title {
+    font-family: var(--font-bengali-stack);
+    color: var(--card-text-dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 !important;
+}
+
+.international-news-card {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.international-ratio-box {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Crisp Display Aspect Ratio */
+    background-color: #e2e8f0;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.international-ratio-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.international-card-body {
+    padding: 12px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.international-card-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.international-card-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.international-news-card:hover .international-card-title a {
+    color: var(--brand-red);
+}
+
+.international-card-meta {
+    font-size: 12px;
+    color: var(--card-text-muted);
+}
+
+
+/* =======================================================
+   RIGHT SIDE: OPINION / EDITORIAL SIDEBAR (MATCHED SYSTEM)
+   ======================================================= */
+.opinion-sidebar-widget {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+/* Tab Header Navigation Bar Core Structure Layout */
+.opinion-tab-nav {
+    border-bottom: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Uniform Button Navigation Tabs Layout */
+.opinion-tab-nav .tab-btn {
+    flex: 1;
+    font-family: var(--font-bengali-stack);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    padding: 8px 16px !important; /* Generous prominent hit targets padding properties */
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    
+    /* Inactive State Base Default Values */
+    background-color: transparent;
+    color: #4f46e5 !important; /* Dark blue/purple text signaling clickable states */
+    transition: all 0.2s ease;
+}
+
+/* Active Tab Styles State (Solid Maroon/Burgundy Accent) */
+.opinion-tab-nav .tab-btn.active {
+   background: linear-gradient(to right, #7a2626, #a67c7c) !important; /* Maroon Burgundy theme hex setup */
+    color: #ffffff !important; /* Pure white text layout color profile */
+}
+
+/* Hide all custom tab panes by default */
+.tab-pane-custom {
+    display: none;
+}
+
+/* Only display the pane that has the active class assigned to it */
+.tab-pane-custom.active {
+    display: block;
+}
+
+/* Table Body Grid Frame Overlay */
+.tab-content {
+    background-color: #fdfbf3 !important; /* Soft light cream background tint separation */
+    border: 1px solid #e8e2d5;
+    border-top: none;
+}
+
+/* Internal Row Components Configuration */
+.opinion-list-wrapper {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.opinion-list-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 10px !important; /* Comfortable row breathing buffer parameters */
+    border-bottom: 1px solid #eee; /* Faint horizontal line rule */
+}
+
+.opinion-list-item:last-child {
+    border-bottom: none;
+}
+
+/* Left-Aligned Large Stylized Light Grey Numbers */
+.opinion-list-wrapper .bengali-numeral {
+    font-family: var(--font-bengali-stack);
+    font-size: 30px;
+    font-weight: 600;
+    color: #b9b8b8; /* Soft low opacity color tone layout constraint */
+    line-height: 24px;
+    margin-right: 12px;
+    display: inline-block;
+    min-width: 18px;
+    text-align: center;
+}
+
+/* Headline List Text Typography Mapping */
+.opinion-list-wrapper .opinion-link {
+    color: #222222;
+    font-family: var(--font-bengali-stack);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
+    word-wrap: break-word;
+    transition: color 0.15s ease;
+}
+
+.opinion-list-wrapper .opinion-link:hover {
+    color: #8c2d36; /* Changes link toward burgundy color on pointer tracking */
+}
+/* =======================================================
+   INTERNATIONAL & OPINION ENGINE RESPONSIVE OVERRIDES
+   ======================================================= */
+@media (max-width: 991.98px) {
+    /* 1. International News Section Grid Optimizations */
+    .international-section-header {
+        margin-bottom: 15px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .international-main-title {
+        font-size: 18px !important;
+    }
+
+    .international-news-card {
+        margin-bottom: 20px !important; /* Spreads out card entries cleanly when stacked vertically */
+    }
+
+    .international-card-body {
+        padding: 10px 0 0 0 !important;
+    }
+
+    .international-card-title {
+        font-size: 15px !important;    /* Highly clear editorial baseline font rule */
+        line-height: 21px !important;
+        margin-bottom: 6px !important;
+    }
+
+    /* 2. Opinion / Editorial Sidebar Layout Adaptations */
+    .opinion-sidebar-widget {
+        margin-top: 15px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .opinion-tab-nav .tab-btn {
+        font-size: 16px !important;    /* Scales typography gracefully to handle long category tags */
+        padding: 10px 6px !important;  /* Provides comfortable hit target zones for fingers */
+        line-height: 20px !important;
+    }
+
+    .opinion-list-item {
+        padding: 10px 8px !important;  /* Fits flawlessly inside narrow horizontal limits */
+    }
+
+    .opinion-list-wrapper .bengali-numeral {
+        font-size: 26px !important;    /* Balances list numbers alongside standard text headlines */
+        margin-right: 10px !important;
+    }
+
+    .opinion-list-wrapper .opinion-link {
+        font-size: 15px !important;    /* Ensures perfect, crisp legibility on small viewports */
+        line-height: 22px !important;
+    }
+}
+/* =======================================================
+   ENTERTAINMENT & ONLINE POLL SECTION ENGINE
+   ======================================================= */
+
+/* --- LEFT SIDE: ENTERTAINMENT NEWS GRID --- */
+.entertainment-section-header {
+    border-bottom: 2px solid #cbd5e1; /* Accent clean gray layout divider line */
+    padding-bottom: 8px;
+}
+
+.entertainment-main-title {
+    font-family: var(--font-bengali-stack);
+    color: var(--card-text-dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+.entertainment-news-card {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.entertainment-ratio-box {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Display Aspect Ratio */
+    background-color: #e2e8f0;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.entertainment-ratio-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.entertainment-card-body {
+    padding: 12px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.entertainment-card-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.entertainment-card-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.entertainment-news-card:hover .entertainment-card-title a {
+    color: var(--brand-red);
+}
+
+.entertainment-card-meta {
+    font-size: 12px;
+    color: var(--card-text-muted);
+}
+
+
+/* --- RIGHT SIDE: ONLINE POLL CARD BOX --- */
+.poll-sidebar-widget {
+    background-color: #ffffff !important; /* Crisp high-contrast white card body background */
+    border: 1px solid #e2e5dd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+/* Poll Header Strip Container (Muted Taupe/Brown Accent) */
+.poll-widget-header {
+    background-color: #9C8A70 !important; /* Exact earthy brown/taupe header tone */
+    padding: 10px 16px !important;
+}
+
+.poll-header-title {
+    font-family: var(--font-bengali-stack);
+    color: #ffffff !important;            /* Pure white typography */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* Poll Container Body Internal Layout */
+.poll-widget-body {
+    padding: 20px 16px;
+}
+
+.poll-question {
+    font-family: var(--font-bengali-stack);
+    color: #222222;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+/* Horizontal Radio Button Flex Wrapping */
+.poll-option-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/* Completely custom inline radio container */
+.poll-radio-label {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-bengali-stack);
+    font-size: 14.5px;
+    color: #222222;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+/* Hide Native Browser Input Box */
+.poll-radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Draw Custom Empty Outer Circle Component */
+.custom-radio-circle {
+    height: 16px;
+    width: 16px;
+    border: 1px solid #b1aba2; /* Muted brown-gray border contour ring */
+    border-radius: 50%;
+    margin-right: 6px;
+    display: inline-block;
+    position: relative;
+    background-color: #ffffff;
+}
+
+/* Radio active indicator dot overlay */
+.poll-radio-label input:checked ~ .custom-radio-circle::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #9C8A70; /* Fills to match header tone on active choice selection */
+}
+
+/* "পুরানো ফলাফল" Action Button Frame Styling */
+.btn-poll-results {
+    display: inline-block;
+    background-color: #9C8A70 !important; /* Unified color matching header element styling */
+    color: #ffffff !important;
+    font-family: var(--font-bengali-stack);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-poll-results:hover {
+    background-color: #84745d !important; /* Slightly deeper tone under tracker interaction */
+}
+/* =======================================================
+   ENTERTAINMENT & ONLINE POLL ENGINE RESPONSIVE OVERRIDES
+   ======================================================= */
+@media (max-width: 991.98px) {
+    /* 1. Entertainment News Section Grid Layout Adjustments */
+    .entertainment-section-header {
+        margin-bottom: 15px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .entertainment-main-title {
+        font-size: 18px !important;
+    }
+
+    .entertainment-news-card {
+        margin-bottom: 20px !important; /* Stacked breathing separation for vertical layouts */
+    }
+
+    .entertainment-card-body {
+        padding: 10px 0 0 0 !important;
+    }
+
+    .entertainment-card-title {
+        font-size: 15px !important;    /* Highly clear editorial baseline font scaling */
+        line-height: 21px !important;
+        margin-bottom: 6px !important;
+    }
+
+    /* 2. Online Poll Card Box Viewport Adaptations */
+    .poll-sidebar-widget {
+        margin-top: 15px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .poll-widget-header {
+        padding: 10px 14px !important;
+    }
+
+    .poll-header-title {
+        font-size: 15px !important;
+    }
+
+    .poll-widget-body {
+        padding: 16px 14px !important;  /* Snug internal padding layout behavior */
+    }
+
+    .poll-question {
+        font-size: 16px !important;    /* Clean typography reduction for mobile tracking */
+        line-height: 22px !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* 3. Horizontal Radio Button Flex Constraints */
+    .poll-option-group {
+        gap: 16px !important;          /* Generous gap padding to prevent overlapping clicks */
+        margin-bottom: 20px !important;
+    }
+
+    .poll-radio-label {
+        font-size: 15px !important;    /* Increases sizing slightly for responsive touch targets */
+        padding: 6px 0 !important;     /* Creates explicit, clean interactive touch zones */
+    }
+
+    /* 4. Interactive Call-To-Action Layout Options */
+    .btn-poll-results {
+        width: 100% !important;        /* Expands to full fluid widths for mobile action layouts */
+        text-align: center !important;
+        padding: 12px 16px !important;
+        font-size: 15px !important;
+    }
+}
+/* =======================================================
+   VIDEO FEATURE SECTION ENGINE
+   ======================================================= */
+
+/* 1. Main Background Container matching Highlights styling exactly */
+.video-zone-main-wrapper {
+    background-color: var(--card-border-color) !important; /* Uniform deep cream tint injection */
+    padding: 20px !important;                               /* Internal breathing padding space */
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* 2. Header Centered Title Layout with Content-Aware line breaks */
+.video-section-divider {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.video-section-divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1.5px;
+    background-color: #6e3efc; /* Accent layout blue line rule */
+    z-index: 1;
+}
+
+.video-section-title {
+    position: relative;
+    background-color: var(--card-border-color) !important; /* Matches wrapper background dynamically */
+    padding: 0 24px;
+    font-family: var(--font-bengali-stack);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--card-text-dark);
+    z-index: 2;
+}
+
+/* 3. Global Modern Aspect-Ratio Media Box Engine */
+.video-thumbnail-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* Fixed Image Distortions: Forces ALL elements to conform to exact structural 16:9 widescreen matrices safely */
+.video-thumbnail-box.feature-large-frame,
+.video-thumbnail-box.feature-sub-frame {
+    aspect-ratio: 14 / 7; /* Ensures large and small images align identically with no layout warping */
+}
+
+.video-thumbnail-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops cleanly inside the bounding box grid without shrinking or breaking resolution layout profiles */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.video-main-feature-card:hover .video-thumbnail-box img,
+.video-overlay-card:hover .video-thumbnail-box img {
+    transform: scale(1.02); /* Clean response animation zoom on track pointer */
+}
+
+/* 4. Left Side Primary Feature Custom Typography */
+.video-main-feature-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.video-feature-content {
+    padding: 16px 0 0 0;
+}
+
+.video-feature-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 32px !important;
+    line-height: 38px !important; /* Balanced line-height to make the 60px font visible */
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding: 08px 16px 05px 16px;
+    display: block !important;    /* Forces element rendering layout rules */
+    height: auto !important;      /* Prevents fixed-height container truncation */
+}
+
+.video-feature-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.video-main-feature-card:hover .video-feature-title a {
+    color: var(--brand-red);
+}
+
+.video-feature-meta {
+    font-size: 13px;
+    color: #000000;
+     padding: 05px 16px 0px 16px;
+    margin-bottom: 0px;
+}
+
+.video-feature-excerpt {
+    font-family: var(--font-bengali-stack);
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 24px;
+     padding: 0px 16px 05px 16px;
+    margin: 0;
+    text-align: justify;
+}
+
+/* 5. Right Side Secondary Stacked Overlay Elements Layer */
+.video-secondary-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Keeps items tightly grouped to the top together */
+    height: auto;                /* Removes forced vertical spacing stretch */
+}
+
+.video-overlay-card {
+    width: 100%;
+    position: relative;
+}
+
+/* Dark transparent bottom gradient overlay panel text layout anchor */
+.video-overlay-gradient-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.60) 45%, rgba(0, 0, 0, 0.60));
+    padding: 40px 16px 14px 16px; /* Smooth spacing for long texts overlaying graphics */
+    z-index: 2;
+}
+
+.video-overlay-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.video-overlay-title a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.video-overlay-card:hover .video-overlay-title a {
+    color: #fca5a5 !important; /* Soft accent red shift text color on tracking response */
+}
+/* =======================================================
+   VIDEO FEATURE SECTION ENGINE RESPONSIVE OVERRIDES
+   ======================================================= */
+@media (max-width: 991.98px) {
+    /* 1. Main Background Layout Scaling Container */
+    .video-zone-main-wrapper {
+        padding: 25px !important;       /* Tightens outer borders gracefully for device screens */
+    }
+
+    /* 2. Header Centered Divider Custom Mechanics */
+    .video-section-divider {
+        margin-bottom: 20px !important;
+    }
+
+    .video-section-title {
+        font-size: 24px !important;    /* Clean typography scaling for mobile screens */
+        font-weight: 400 !important;
+        padding: 0 14px !important;    /* Prevents horizontal space waste */
+        line-height: 24px !important;
+    }
+
+    /* 3. Primary Large Highlight Video Feature Card Adjustments */
+    .video-feature-content {
+        padding: 12px 0 0 0 !important;
+    }
+
+    .video-feature-title {
+        font-size: 32px !important;    /* Downscales massive header layers to sit elegantly */
+        line-height: 28px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .video-feature-excerpt {
+        font-size: 18px !important;    /* Highly clear description scaling for reading flow */
+        line-height: 25px !important;
+    }
+
+    /* 4. Secondary Right Side Column Vertical Stack Modifications */
+    .video-secondary-stack {
+        margin-top: 20px !important;   /* Pushes side column under the main video card layout stack */
+        gap: 16px !important;          /* Generous vertical breathing room between multi-stacked items */
+    }
+
+    .video-overlay-card {
+        margin-bottom: 4px !important; /* Separator cushion safety layer */
+    }
+
+   
+
+    .video-overlay-title {
+        font-size: 27px !important;    /* Fits complex long headlines cleanly on portrait viewports */
+        line-height: 29px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .video-feature-title {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+}
+/* =======================================================
+   SPORTS (খেলাধুলা) TRIPLE SECTION LAYOUT ENGINE
+   ======================================================= */
+
+/* Core Header Architecture Layout */
+.sports-section-header {
+    position: relative;
+    text-align: left; /* Aligns title securely to the left boundary edge */
+    border-bottom: 2px solid #cbd5e1; /* Accent clean gray layout divider line */
+    padding-bottom: 8px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.sports-main-title {
+    font-family: var(--font-bengali-stack);
+    color: var(--card-text-dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* Global Aspect Container Blocks */
+.sports-media-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e2e8f0;
+    border-radius: 2px;
+}
+
+.sports-media-wrapper.hero-ratio {
+    aspect-ratio: 16 / 10; /* Precise scaling match for large left frame */
+}
+
+.sports-media-wrapper.thumb-ratio {
+    aspect-ratio: 16 / 9.5; /* Matches layout scale block of center tier */
+}
+
+.sports-media-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s ease-in-out;
+}
+
+/* Global Dynamic Hover States for Cards */
+.sports-main-hero-card:hover .sports-media-wrapper img,
+.sports-medium-card:hover .sports-media-wrapper img,
+.sports-micro-row-card:hover .sports-micro-img-box img {
+    transform: scale(1.02);
+}
+
+/* Shared Micro Typography Components */
+.sports-card-meta {
+    font-size: 11.5px;
+    color: var(--card-text-muted);
+    margin-top: 4px;
+}
+
+/* COLUMN 1: Large Main Hero Styling definitions */
+.sports-hero-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.sports-hero-title a,
+.sports-medium-title a,
+.sports-micro-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.sports-main-hero-card:hover .sports-hero-title a,
+.sports-medium-card:hover .sports-medium-title a,
+.sports-micro-row-card:hover .sports-micro-title a {
+    color: var(--brand-red); /* Uniform red tracker feedback link activation */
+}
+
+.sports-hero-excerpt {
+    font-family: var(--font-bengali-stack);
+    font-size: 15px;
+    font-weight: 400;
+    color: #475569;
+    line-height: 23px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* COLUMN 2: Center Vertical Grid Definitions */
+.sports-center-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.sports-medium-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* =======================================================
+   REVISED SPORTS RIGHT MICRO ROW MATRIX (MATCHING TARGET)
+   ======================================================= */
+.sports-right-list-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 22px; /* Increased padding gap to match target layout spacing precisely */
+}
+
+.sports-micro-row-card {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Updated Image Box Container to allow clean full vertical rendering */
+.sports-micro-img-box {
+    position: relative;
+    width: 110px;               /* Slightly widened anchor to match image ratio width */
+    min-width: 110px;
+    height: 90px;               /* Defined explicit height instead of standard widescreen crop */
+    background-color: #ffffff;  /* Adds crisp white backdrop fill beneath images */
+    border-radius: 2px;
+    margin-right: 15px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05); /* Soft baseline structure lift */
+}
+
+.sports-micro-img-box img {
+    width: 100%;
+    height: 76px;               /* Pulls photo down cleanly leaving white space below */
+    object-fit: cover;
+    display: block;
+}
+
+.sports-micro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2px;
+}
+
+/* Enlarged typography setting to correct row flow alignments */
+.sports-micro-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 18px;          /* Increased font scaling to stretch headlines out correctly */
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.sports-micro-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+/* Shared Timestamp Meta Alignment */
+.sports-card-meta {
+    font-size: 12.5px;
+    color: var(--card-text-muted);
+    margin-top: 6px;
+}
+/* =======================================================
+   SPORTS (খেলাধুলা) ENGINE RESPONSIVE OVERRIDES
+   ======================================================= */
+@media (max-width: 991.98px) {
+    /* 1. Global Section Headers & Layout Architecture */
+    .sports-section-header {
+        margin-bottom: 18px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .sports-main-title {
+        font-size: 18px !important;
+    }
+
+    /* 2. Primary Layout Block Containers */
+    .sports-main-hero-card,
+    .sports-medium-card {
+        margin-bottom: 24px !important; /* Elegant spacing buffer for vertically stacked grid boxes */
+    }
+
+    /* 3. Typography Realignment Mechanics */
+    .sports-hero-title,
+    .sports-medium-title {
+        font-size: 17px !important;    /* Clear, proportional title sizing on device screens */
+        line-height: 23px !important;
+        margin-top: 10px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .sports-hero-excerpt {
+        font-size: 14.5px !important;  /* Fits cleanly inside screen parameters */
+        line-height: 21px !important;
+        margin-top: 8px !important;
+    }
+
+    /* 4. Column 2 Stack Specific Tuning */
+    .sports-center-stack {
+        gap: 0 !important;
+    }
+
+    /* 5. Right-Side Micro Row Matrix Adaptations */
+    .sports-right-list-stack {
+        gap: 16px !important;          /* Adjusts spacing beautifully for mobile views */
+        margin-top: 8px !important;
+    }
+
+    .sports-micro-row-card {
+        padding-bottom: 12px !important;
+        border-bottom: 1px solid #e2e8f0; /* Soft underlay divider rule for continuous stacking clarity */
+    }
+
+    .sports-micro-row-card:last-child {
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+    }
+
+    .sports-micro-img-box {
+        width: 95px !important;        /* Scales container boundaries down gracefully to preserve viewport real estate */
+        min-width: 95px !important;
+        height: 78px !important;       /* Recalibrates proportional spatial boundaries */
+        margin-right: 12px !important;
+    }
+
+    .sports-micro-img-box img {
+        height: 66px !important;       /* Maintains the target layout white underlay spacing beautifully */
+    }
+
+    .sports-micro-content {
+        padding-top: 0 !important;     /* Eliminates unneeded pixel offsets */
+    }
+
+    .sports-micro-title {
+        font-size: 15.5px !important;  /* Pristine reading size for side-by-side elements */
+        line-height: 21px !important;
+    }
+
+    .sports-card-meta {
+        font-size: 12px !important;    /* Clean standard micro baseline size for device screens */
+        margin-top: 4px !important;
+    }
+}
+/* =======================================================
+   4-COLUMN CATEGORY GRID ENGINE (QUAD MATRIX)
+   ======================================================= */
+
+.quad-category-widget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* 1. Header Configurations matching image_299561.png precisely */
+.quad-category-header {
+    border-bottom: 1px solid #e2e8f0; /* Crisp thin category border dividing line */
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.quad-category-title {
+    font-family: var(--font-bengali-stack);
+    color: var(--card-text-dark);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    border-bottom: 2px solid #cbd5e1; /* Accent clean gray layout divider line */
+    padding-bottom: 8px;
+    line-height: 24px;
+}
+
+/* 2. Card Media Structure */
+.quad-category-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.quad-media-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9.5; /* Matches layout scale block perfectly across columns */
+    overflow: hidden;
+    background-color: #e2e8f0;
+    border-radius: 2px;
+}
+
+.quad-media-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quad-category-card:hover .quad-media-wrapper img {
+    transform: scale(1.02); /* Clean response interaction zoom */
+}
+
+/* 3. Typography & Row Alignments */
+.quad-card-body {
+    padding: 12px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.quad-card-title {
+    font-family: var(--font-bengali-stack);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.quad-card-title a {
+    color: var(--card-text-dark);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.quad-category-card:hover .quad-card-title a {
+    color: var(--brand-red); /* Uniform brand red highlight color on interaction shift */
+}
+
+.quad-card-meta {
+    font-size: 12px;
+    color: var(--card-text-muted);
+    margin-top: 2px;
+}
+/* =======================================================
+   4-COLUMN CATEGORY GRID ENGINE RESPONSIVE OVERRIDES
+   ======================================================= */
+@media (max-width: 991.98px) {
+    /* 1. Category Title & Header Modifications */
+    .quad-category-header {
+        margin-bottom: 14px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .quad-category-title {
+        font-size: 18px !important;    /* Proportional scaling down for responsive headers */
+        line-height: 22px !important;
+        padding-bottom: 6px !important;
+    }
+
+    /* 2. Grid Card Layout Mechanics */
+    .quad-category-card {
+        margin-bottom: 20px !important; /* Inserts necessary breathing separation for stacked configurations */
+    }
+
+    /* Ensures the very last card in the layout block doesn't bleed unneeded bottom margins */
+    div[class^="col-"]:last-child .quad-category-card,
+    .row > div:last-child .quad-category-card {
+        margin-bottom: 0 !important;
+    }
+
+    /* 3. Typography & Spatial Gutters Adaptations */
+    .quad-card-body {
+        padding: 10px 0 0 0 !important; /* Refined spatial distance below the photo frame */
+    }
+
+    .quad-card-title {
+        font-size: 15.5px !important;  /* Highly clear, scan-friendly mobile headline sizing */
+        line-height: 21px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .quad-card-meta {
+        font-size: 11.5px !important;  /* Keeps metadata text clean and visually sub-layered */
+        margin-top: 2px !important;
+    }
+}
+/* Smooth transition for your square Back to Top button hovered states */
+.back-top {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.4) !important; /* Light transparent white */
+    backdrop-filter: blur(4px); /* Optional: adds a modern frosted-glass effect */
+}
+
+.back-top:hover {
+    background-color: #ffffff !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px);
+}
