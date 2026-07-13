@@ -317,12 +317,12 @@ html, body {
     }
 
     .mk-column-nav-node h4 a {
-        font-size: 16px !important;
+        font-size: 18px !important;
         line-height: 22px !important;
     }
 
     .mk-column-nav-node ul li a {
-        font-size: 14px !important;
+        font-size: 18px !important;
     }
 
     /* 4. Full-width Stacked Meta Links Matrix Layout */

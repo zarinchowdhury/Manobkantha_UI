@@ -499,7 +499,7 @@ nav#exactMobileDropdownMenu.menu-mobile.open-active {
 .custom-copyright-text {
     font-family: 'SolaimanLipi', sans-serif !important;
     font-size: 15px !important;
-    line-height: 23px !important;
+    line-height: 2 !important;
     color: #4a4a4a !important; /* Flat charcoal slate gray from the image */
     font-weight: 400 !important; /* Removes bold styling completely */
     margin: 0 !important;
@@ -2221,6 +2221,130 @@ body {
         text-align: center !important;
         padding: 12px 16px !important;
         font-size: 15px !important;
+    }
+}
+/* ==========================================================================
+   MATRIX LAYER MOBILE RESPONSIVENESS OVERRIDE (max-width: 991px)
+   ========================================================================== */
+@media (max-width: 991px) {
+    /* 1. Reset Container and Primary Structural Columns */
+    .container.my-5 {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* Force the left news column and right sidebar column to stack vertically */
+    .col-lg-9, 
+    .col-lg-3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    /* Push the sidebar column down to give the main content breathing room */
+    .col-lg-3 {
+        margin-top: 40px !important;
+    }
+
+    /* 2. Strip Sticky Attributes for Fluid Mobile Scrolling */
+    .position-sticky {
+        position: relative !important;
+        top: 0 !important;
+        z-index: auto !important;
+    }
+
+    /* 3. Re-architect Left Column News Grids (International & Entertainment) */
+    .international-section .row.g-3,
+    .entertainment-section .row.g-3 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important; /* Consistent vertical card separation space */
+    }
+
+    /* Force 3-column article cards to expand across the full screen width */
+    .international-section .col-md-4,
+    .entertainment-section .col-md-4 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    /* 4. Card Typography Optimization */
+    .international-card-title,
+    .entertainment-card-title {
+        font-size: 18px !important; /* Slightly enlarged for easy reading on phone screens */
+        line-height: 26px !important;
+        margin-bottom: 6px !important;
+    }
+    
+    .international-card-title a,
+    .entertainment-card-title a {
+        display: block !important;
+        word-wrap: break-word !important; /* Ensures long headlines won't overflow */
+    }
+
+    /* 5. Right Column Widgets Adjustments (Opinion Tabs & Online Poll) */
+    .opinion-sidebar-widget,
+    .poll-sidebar-widget {
+        margin-top: 0 !important;
+        margin-bottom: 25px !important;
+        width: 100% !important;
+    }
+
+    /* Keep tab headers structural, text readable, and hit areas responsive */
+    .opinion-tab-nav .tab-btn {
+        font-size: 16px !important;
+        padding: 12px 10px !important; 
+    }
+
+    .opinion-list-wrapper .opinion-link {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+
+    /* Fix Poll Question and Choice Options for Smaller Screens */
+    .poll-question {
+        font-size: 16px !important;
+        line-height: 22px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .poll-option-group {
+        gap: 15px !important; /* Add breathing space between radio targets */
+        margin-bottom: 20px !important;
+    }
+
+    .poll-radio-label {
+        font-size: 15px !important;
+        padding: 5px 0 !important;
+    }
+
+    /* Make poll action buttons stack on very narrow phones, or stay side-by-side gracefully */
+    .poll-widget-body .d-flex {
+        flex-direction: row !important;
+        gap: 10px !important;
+    }
+
+    .btn-poll-results {
+        padding: 10px 12px !important;
+        font-size: 13px !important;
+        text-align: center !important;
+    }
+}
+
+/* ==========================================================================
+   EXTRA SMALL MOBILE REFINEMENTS (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+    /* Stack the poll buttons vertically if space is too narrow */
+    .poll-widget-body .d-flex {
+        flex-direction: column !important;
+    }
+    
+    .btn-poll-results {
+        width: 100% !important;
     }
 }
 /* =======================================================
